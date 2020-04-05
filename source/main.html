@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,35 +16,65 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/Supergym-logo.png" width="89" height="20" alt="Логотип-Суперджим">
-    </a>
-    <a class="page-header__phone" href="tel:88005555555">8-800-555-55-55</a>
-  </header>
+    <div style="display: none;">
+      <include src="build/img/sprite_auto.svg"></include>
+    </div>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <span class="visually-hidden">Логотип сайта: Фитнес-центр</span>
+        <svg class="page-header__logo-image" width="89" height="20">
+          <use xlink:href="#icon-Supergym-logo"></use>
+        </svg>
+      </a>
+      <a class="page-header__phone" href="tel:88005555555">8-800-555-55-55</a>
+    </div>
 
-  <main class="page-main">
     <section class="main-info">
-      <div class="main-info__about-us">
-        <b class="main-info__intro">Омск</b>
-        <h1 class="main-info__title">Фитнес центр</h1>
-        <p class="main-info__description">Тренажёрный зал Групповые занятия Кардио-зона</p>
-        <button class="main-info__btn">купить абонемент</button>
-      </div>
-      <img class="main-info__photo" src="img/main-photo.jpg" width="500" height="556" alt="Главное фото страницы">
-      <div class="main-info__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#">fb</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#">vk</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--ig" href="#">ig</a>
-          </li>
-        </ul>
+      <div class="main-info__wrapper">
+        <div class="main-info__about-us">
+          <b class="main-info__intro">Омск</b>
+          <h1 class="main-info__title">Фитнес центр</h1>
+          <p class="main-info__description">Тренажёрный зал Групповые занятия Кардио-зона</p>
+          <span class="visually-hidden">купить абонемент</span>
+          <button class="main-info__btn" type="button">купить абонемент</button>
+        </div>
+        <picture>
+          <source media="(max-width: 1199px)" type="image/webp" srcset="img/main-photo-tablet.webp, img/main-photo-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/main-photo.webp, img/main-photo@2x.webp 2x">
+          <source media="(max-width: 1199px)" srcset="img/main-photo-tablet.jpg, img/main-photo-tablet@2x.jpg 2x">
+          <img class="main-info__photo" src="img/main-photo.jpg" srcset="img/main-photo@2x.jpg 2x" width="500" height="556" alt="Главное фото страницы">
+        </picture>
+        <div class="main-info__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#">
+                <span class="visually-hidden">фэйсбук</span>
+                <svg width="12" height="9">
+                  <use xlink:href="#icon-Fb"></use>
+                  </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <span class="visually-hidden">вконтакте</span>
+                <svg width="14" height="9">
+                  <use xlink:href="#icon-vk"></use>
+                  </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ig" href="#">
+                <span class="visually-hidden">инстаграмм</span>
+                <svg width="10" height="10">
+                  <use xlink:href="#icon-ig"></use>
+                  </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-  </main>
+  </header>
 </body>
+
 </html>
