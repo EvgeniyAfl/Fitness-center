@@ -7,6 +7,8 @@
   background-size: cover;
   background-color: $color-red;
 
+  margin-bottom: 120px;
+
   @media (min-resolution: $retina-dppx),
     (min-resolution: $retina-dpi) {
     background-image: url("../img/bg-main@2x.png");
@@ -30,9 +32,15 @@
   font-weight: 700;
   letter-spacing: 0.03em;
   color: $color-white;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
-.page-header__logo-image {
+.page-header__logo svg {
   height: 20px;
 }
 
@@ -54,7 +62,7 @@
     padding-top: 39px;
   }
 
-  .page-header__logo-image {
+  .page-header__logo svg {
     width: 80px;
     height: 19px;
   }
@@ -80,7 +88,7 @@
     }
   }
 
-  .page-header__logo-image {
+  .page-header__logo svg {
     width: 68px;
     height: 15px;
   }

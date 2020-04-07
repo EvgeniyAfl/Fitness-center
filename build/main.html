@@ -34,7 +34,7 @@
     <div class="page-header__wrapper">
       <a class="page-header__logo">
         <span class="visually-hidden">Логотип сайта: Фитнес-центр</span>
-        <svg class="page-header__logo-image" width="89" height="20">
+        <svg width="89" height="20">
           <use xlink:href="#icon-Supergym-logo"></use>
         </svg>
       </a>
@@ -44,17 +44,19 @@
     <section class="main-info">
       <div class="main-info__wrapper">
         <div class="main-info__about-us">
-          <b class="main-info__intro">Омск</b>
-          <h1 class="main-info__title">Фитнес центр</h1>
-          <p class="main-info__description">Тренажёрный зал Групповые занятия Кардио-зона</p>
+          <b>Омск</b>
+          <h1>Фитнес центр</h1>
+          <p>Тренажёрный зал Групповые занятия Кардио-зона</p>
           <span class="visually-hidden">купить абонемент</span>
           <button class="main-info__btn" type="button">купить абонемент</button>
         </div>
         <picture>
           <source media="(max-width: 1199px)" type="image/webp" srcset="img/main-photo-tablet.webp, img/main-photo-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/main-photo.webp, img/main-photo@2x.webp 2x">
+          <!-- 1х: 324px; 2x: 648px -->
           <source media="(max-width: 1199px)" srcset="img/main-photo-tablet.jpg, img/main-photo-tablet@2x.jpg 2x">
-          <img class="main-info__photo" src="img/main-photo.jpg" srcset="img/main-photo@2x.jpg 2x" width="500" height="556" alt="Главное фото страницы">
+          <!-- 1х: 500px; 2x: 1000px -->
+          <img src="img/main-photo.jpg" srcset="img/main-photo@2x.jpg 2x" width="500" height="556" alt="Главное фото страницы">
         </picture>
         <div class="main-info__social social">
           <ul class="social__list">
@@ -63,7 +65,7 @@
                 <span class="visually-hidden">фэйсбук</span>
                 <svg width="12" height="9">
                   <use xlink:href="#icon-Fb"></use>
-                  </svg>
+                </svg>
               </a>
             </li>
             <li class="social__item">
@@ -71,7 +73,7 @@
                 <span class="visually-hidden">вконтакте</span>
                 <svg width="14" height="9">
                   <use xlink:href="#icon-vk"></use>
-                  </svg>
+                </svg>
               </a>
             </li>
             <li class="social__item">
@@ -79,7 +81,7 @@
                 <span class="visually-hidden">инстаграмм</span>
                 <svg width="10" height="10">
                   <use xlink:href="#icon-ig"></use>
-                  </svg>
+                </svg>
               </a>
             </li>
           </ul>
@@ -87,6 +89,35 @@
       </div>
     </section>
   </header>
+
+  <main class="page-main">
+    <section class="suggestions">
+      <div class="suggestions__wrapper">
+        <div class="suggestions__offers">
+          <h2>Тренажерный зал</h2>
+          <h3>Просторный зал площадью 900 кв/м</h3>
+          <p>
+            Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+            Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+          </p>
+          <p>
+            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+            несколько оборудованных залов для различных видов групповых занятий.
+          </p>
+        </div>
+        <div class="suggestions__pucture">
+          <picture>
+            <source media="(max-width: 1199px)" type="image/webp" srcset="img/gym-photo-tablet.webp, img/gym-photo-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/gym-photo.webp, img/gym-photo@2x.webp 2x">
+            <!-- 1х: 678px; 2x: 1356px -->
+            <source media="(max-width: 1199px)" srcset="img/gym-photo-tablet.jpg, img/gym-photo-tablet@2x.jpg 2x">
+            <!-- 1х: 660px; 2x: 1320px -->
+            <img src="img/gym-photo.jpg" srcset="img/gym-photo@2x.jpg 2x" width="678" height="401" alt="Фото тренажерного зала">
+          </picture>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
