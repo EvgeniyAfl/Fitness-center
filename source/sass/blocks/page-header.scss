@@ -48,7 +48,7 @@
   }
 
   .page-header__wrapper {
-    width: 678px;
+    width: 88%;
 
     margin-bottom: 19px;
     padding-top: 39px;
@@ -68,8 +68,6 @@
 
 @media (max-width: $mobile-width) {
   .page-header__wrapper {
-    width: 290px;
-
     padding-top: 20px;
   }
 

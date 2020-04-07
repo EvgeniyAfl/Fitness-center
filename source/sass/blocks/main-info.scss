@@ -99,7 +99,11 @@
 
 @media (max-width: $tablet-width) {
   .main-info__wrapper {
-    width: 678px;
+    width: 88%;
+  }
+
+  .main-info__about-us {
+    width: 324px;
   }
 
   .main-info__intro {
@@ -121,9 +125,9 @@
     width: 185px;
   }
 
-  .main-info__about-us {
-    margin-right: 30px;
-  }
+  // .main-info__about-us {
+  //   margin-right: 30px;
+  // }
 
   .main-info__description {
     top: 172px;
@@ -137,18 +141,18 @@
   }
 
   .main-info__photo {
-    width: 398px;
+    width: 323px;
     height: 390px;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .main-info__wrapper {
-    width: 290px;
-  }
-
   .main-info {
     min-height: 434px;
+  }
+
+  .main-info__wrapper {
+    justify-content: center;
   }
 
   .main-info__photo {
