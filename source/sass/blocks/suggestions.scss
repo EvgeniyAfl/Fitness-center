@@ -25,7 +25,7 @@
   color: $color-dark-blue;
 
   margin-top: 47px;
-  margin-left: 61px;
+  margin-left: 65px;
 
   h2 {
     font-size: 49px;
@@ -63,14 +63,113 @@
   }
 }
 
+.suggestions__pucture {
+  position: relative;
+  display: flex;
+  width: 662px;
+
+  z-index: 2;
+}
+
+.suggestion__container {
+  position: absolute;
+  top: 289px;
+  left: -63px;
+
+  display: block;
+  width: 364px;
+  height: 228px;
+
+  background-image: url("../img/gym-photo-movie.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: auto;
+
+  @media (min-resolution: $retina-dppx),
+    (min-resolution: $retina-dpi) {
+    background-image: url("../img/gym-photo-movie@2x.jpg");
+    background-size: contain;
+  }
+
+  z-index: 1;
+
+  &::before {
+    position: inherit;
+    content: "";
+    width: inherit;
+    height: inherit;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(20, 54, 122, 0.5);
+
+    z-index: 0;
+  }
+}
+
+.suggestion__btn {
+  position: absolute;
+  top: 74px;
+  left: 147px;
+
+  display: block;
+  width: 77px;
+  height: 77px;
+
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background-clip: padding-box;
+  background-image: linear-gradient(45deg, #003d85, #b80027);
+
+  cursor: pointer;
+
+  svg {
+    display: block;
+    width: 15px;
+    height: 15px;
+
+    position: inherit;
+    top: 28px;
+    left: 30px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px #b80027;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    margin: -5px;
+
+    border-radius: inherit;
+    background: linear-gradient(to right bottom, #ed0233, #003eb7);
+    opacity: 0.2;
+    z-index: -1;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .suggestions {
-    min-height: 854px;
+    min-height: 658px;
+
+    padding-bottom: 183px;
   }
 
   .suggestions__wrapper {
     width: 88%;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -87,16 +186,53 @@
       line-height: 42px;
     }
 
+    h3 {
+      margin-bottom: 34px;
+    }
+
     p {
       display: block;
       width: 85%;
 
       margin: 0 auto;
+      margin-bottom: 43px;
       padding: 0;
     }
 
     p:last-child {
       display: none;
+    }
+  }
+
+  .suggestions__pucture {
+    width: 678px;
+
+    margin: 0 auto;
+  }
+
+  .suggestion__container {
+    top: 261px;
+    left: 205px;
+
+    width: 266px;
+    height: 167px;
+
+    background-size: contain;
+  }
+
+  .suggestion__btn {
+    width: 57px;
+    height: 57px;
+
+    top: 55px;
+    left: 104px;
+
+    svg {
+      width: 12px;
+      height: 12px;
+
+      top: 19px;
+      left: 21px;
     }
   }
 }
@@ -112,11 +248,18 @@
   }
 
   .suggestions__offers {
-    width: 88%;
+    width: 90%;
 
     text-align: left;
 
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
     h3 {
+      margin-bottom: 22px;
+
       font-size: 18px;
       line-height: 150%;
     }
@@ -125,7 +268,7 @@
       width: 91%;
 
       margin: 0;
-      padding-bottom: 20px;
+      padding-bottom: 33px;
 
       text-align: left;
     }
@@ -133,6 +276,8 @@
 
   .suggestions__pucture {
     width: 100%;
+    max-width: 400px;
+    flex-direction: column;
 
     padding-bottom: 70px;
 
@@ -140,5 +285,36 @@
       width: 100%;
       height: 313px;
     }
+  }
+
+  .suggestion__container {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    max-width: 320px;
+
+    margin: 0 auto;
+    margin-top: 35px;
+
+    background-image: url("../img/gym-photo-movie-phone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+
+    @media (min-resolution: $retina-dppx),
+      (min-resolution: $retina-dpi) {
+      background-image: url("../img/gym-photo-movie-phone@2x.png");
+    }
+
+    &::before {
+      position: absolute;
+    }
+  }
+
+  .suggestion__btn {
+    top: 57px;
+    left: 132px;
   }
 }

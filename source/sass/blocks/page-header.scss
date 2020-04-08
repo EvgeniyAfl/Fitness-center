@@ -46,6 +46,9 @@
 
 @media (max-width: $tablet-width) {
   .page-header {
+
+    margin-bottom: 97px;
+
     background-size: auto;
     background-position: -64px -62px;
 
@@ -80,6 +83,8 @@
   }
 
   .page-header {
+    margin-bottom: 67px;
+
     background-position: -117px -50px;
 
     @media (min-resolution: $retina-dppx),
