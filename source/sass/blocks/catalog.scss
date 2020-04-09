@@ -1,0 +1,164 @@
+.catalog__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__item {
+  width: 360px;
+  min-height: 448px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+
+  padding-top: 63px;
+
+  background-color: $color-white;
+  text-align: center;
+  z-index: 1;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+
+    font-size: 26px;
+    line-height: 29px;
+    font-weight: 700;
+    color: $color-dark-blue;
+  }
+
+  span {
+    margin-bottom: 65px;
+
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: $color-dark-gray;
+  }
+
+  a {
+    width: 207px;
+    display: block;
+
+    margin: 0 auto;
+    padding: 25px 0;
+
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: $color-dark-blue;
+    text-transform: uppercase;
+
+    border: 2px solid $color-dark-blue;
+    background-color: transparent;
+
+    cursor: pointer;
+  }
+}
+
+.catalog__item--active {
+  width: 360px;
+
+  padding-top: 56px;
+
+  border: 7px solid transparent;
+  border-image: linear-gradient(to right bottom, #d10a42 5%, #00359f 100%);
+  border-image-slice: 1;
+
+  a {
+    border: none;
+    background-image: linear-gradient(112deg, #ed0233 17.6%, #003eb7 95.3%);
+
+    color: $color-white;
+  }
+}
+
+.catalog__price {
+  position: relative;
+  display: block;
+
+  margin: 0 auto;
+  margin-bottom: 33px;
+  padding: 0;
+
+  font-size: 60px;
+  line-height: 150%;
+  font-weight: 700;
+  color: $color-blue;
+
+  b {
+    display: block;
+    position: absolute;
+    top: -58%;
+    left: -12%;
+
+    font-size: 100px;
+    line-height: 150%;
+    color: $color-light-gray;
+
+    z-index: -1;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .catalog__item {
+    width: 100%;
+    min-height: 448px;
+
+    margin-bottom: 40px;
+
+    a {
+      width: 47%;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .catalog__price {
+    margin-bottom: 30px;
+
+    font-size: 48px;
+
+    b {
+      font-size: 80px;
+    }
+
+    svg {
+      width: 24px;
+      height: 33px;
+    }
+  }
+
+  .catalog__item {
+    min-height: 385px;
+
+    margin-bottom: 35px;
+    padding-top: 52px;
+
+    h3 {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    span {
+      margin-bottom: 53px;
+    }
+
+    a {
+      width: 72%;
+
+      padding: 24px 0;
+    }
+  }
+
+  .catalog__item--active {
+    padding-top: 45px;
+  }
+}

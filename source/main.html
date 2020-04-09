@@ -81,9 +81,9 @@
   </header>
 
   <main class="page-main">
-    <section class="suggestions">
-      <div class="suggestions__wrapper">
-        <div class="suggestions__offers">
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <div class="reviews__offers">
           <h2>Тренажерный зал</h2>
           <h3>Просторный зал площадью 900 кв/м</h3>
           <p>
@@ -95,28 +95,79 @@
             несколько оборудованных залов для различных видов групповых занятий.
           </p>
         </div>
-        <div class="suggestions__pucture">
+        <div class="reviews__pucture">
           <picture>
             <source media="(max-width: 767px)" type="image/webp"
               srcset="img/gym-photo-phone.webp, img/gym-photo-phone@2x.webp 2x">
             <source media="(max-width: 1199px)" type="image/webp"
               srcset="img/gym-photo-tablet.webp, img/gym-photo-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/gym-photo.webp, img/gym-photo@2x.webp 2x">
-              <!-- 1x: 320px; 2x: 640px -->
-              <source media="(max-width: 767px)" srcset="img/gym-photo-phone.jpg, img/gym-photo-phone@2x.jpg 2x">
-              <!-- 1x: 678px; 2x: 1356px -->
+            <!-- 1x: 320px; 2x: 640px -->
+            <source media="(max-width: 767px)" srcset="img/gym-photo-phone.jpg, img/gym-photo-phone@2x.jpg 2x">
+            <!-- 1x: 678px; 2x: 1356px -->
             <source media="(max-width: 1199px)" srcset="img/gym-photo-tablet.jpg, img/gym-photo-tablet@2x.jpg 2x">
-              <!-- 1x: 660px; 2x: 1320px -->
+            <!-- 1x: 660px; 2x: 1320px -->
             <img src="img/gym-photo.jpg" srcset="img/gym-photo@2x.jpg 2x" width="678" height="401"
               alt="Фото тренажерного зала">
           </picture>
-          <div class="suggestion__container">
-            <button class="suggestion__btn" type="button">
+          <div class="reviews__container">
+            <button class="reviews__btn" type="button">
               <svg width="17" height="17">
                 <use xlink:href="#icon-play"></use>
               </svg>
             </button>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="suggestions">
+      <div class="suggestions__wrapper">
+        <h2>абонементы</h2>
+        <div class="sugestions__tools-wrapper tools">
+          <button class="tools__btn tools__btn--active" type="button">1 месяц
+          </button>
+          <button class="tools__btn" type="button">6 месяцев
+          </button>
+          <button class="tools__btn" type="button">12 месяцев
+          </button>
+          <div class="tools__full-range"></div>
+        </div>
+        <div class="suggestions__catalog-wrapper catalog">
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <h3>С тренером</h3>
+              <span>12 занятий</span>
+              <div class="catalog__price">5000
+                <b>5000</b>
+                <svg width="30" height="42">
+                  <use xlink:href="#icon-ruble"></use>
+                </svg>
+              </div>
+              <a href="#">купить абонемент</a>
+            </li>
+            <li class="catalog__item catalog__item--active">  <!-- catalog__item--active -->
+              <h3>Дневной</h3>
+              <span>с 8:00 до 17:00</span>
+              <div class="catalog__price">1700
+                <b>1700</b>
+                <svg width="30" height="42">
+                  <use xlink:href="#icon-ruble"></use>
+                </svg>
+              </div>
+              <a href="#">купить абонемент</a>
+            </li>
+            <li class="catalog__item">
+              <h3>Полный день</h3>
+              <span>с 8:00 до 22:00</span>
+              <div class="catalog__price">2700
+                <b>2700</b>
+                <svg width="30" height="42">
+                  <use xlink:href="#icon-ruble"></use>
+                </svg>
+              </div>
+              <a href="#">купить абонемент</a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
