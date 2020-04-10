@@ -1,8 +1,29 @@
 .suggestions {
+  position: relative;
   width: 100%;
   min-height: 851px;
 
   background-color: $color-gray;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    width: 320px;
+    height: 384px;
+
+    background-image: url("../img/rogue.png");
+    background-size: cover;
+
+    @media (min-resolution: $retina-dppx),
+      (min-resolution: $retina-dpi) {
+      background-image: url("../img/rogue@2x.png");
+      background-size: cover;
+    }
+  }
 }
 
 .suggestions__wrapper {
@@ -57,6 +78,22 @@
 @media (max-width: $tablet-width) {
   .suggestions {
     min-height: 1779px;
+
+    &::after {
+      width: 305px;
+      height: 345px;
+
+      background-image: url("../img/rogue-tablet.png");
+      background-size: auto;
+      background-position: -42px 23px;
+
+      @media (min-resolution: $retina-dppx),
+        (min-resolution: $retina-dpi) {
+        background-image: url("../img/rogue-tablet@2x.png");
+        background-size: 355px 440px;
+        background-position: -46px 27px;
+      }
+    }
   }
 
   .suggestions__wrapper {
@@ -84,6 +121,12 @@
 }
 
 @media (max-width: $mobile-width) {
+  .suggestions {
+    &::after {
+      background: none;
+    }
+  }
+
   .suggestions__wrapper {
     width: 90%;
 

@@ -2,6 +2,7 @@
 var pageHeader = document.querySelector('.page-header');
 var headerToggle = document.querySelector('.page-header__toggle');
 
+
 pageHeader.classList.remove('page-header--nojs');
 
 headerToggle.addEventListener('click', function () {
@@ -13,3 +14,5 @@ headerToggle.addEventListener('click', function () {
     pageHeader.classList.remove('page-header--opened');
   }
 });
+
+
