@@ -132,8 +132,9 @@
     <section class="suggestions">
       <div class="suggestions__wrapper">
         <h2>абонементы</h2>
-        <div class="sugestions__tools-wrapper tools">
-          <button class="tools__btn" type="button">1 месяц <!-- tools__btn--active-->
+        <div class="suggestions__tools-wrapper tools">
+          <button class="tools__btn" type="button">1 месяц
+            <!-- tools__btn--active-->
           </button>
           <button class="tools__btn" type="button">6 месяцев
           </button>
@@ -154,7 +155,8 @@
               </div>
               <a href="#">купить абонемент</a>
             </li>
-            <li class="catalog__item">  <!-- catalog__item--active -->
+            <li class="catalog__item">
+              <!-- catalog__item--active -->
               <h3>Дневной</h3>
               <span>с 8:00 до 17:00</span>
               <div class="catalog__price">1700
@@ -178,6 +180,38 @@
             </li>
           </ul>
         </div>
+      </div>
+    </section>
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h2 class="visually-hidden">Наши новости</h2>
+        <div class="promo__news news">
+          <h3>SUPER GAMES</h3>
+          <ul class="news__list">
+            <li class="news__item">
+              <h3>Дата</h3>
+              <time class="news__date" datetime="2019-05-07">
+                <b>7</b> Марта 2019
+              </time>
+            </li>
+            <li class="news__list">
+              <h3>Время</h3>
+              <time class="news__time" datetime="2019-05-07T12:00">
+                12:00
+              </time>
+            </li>
+          </ul>
+          <p>Ежегодные соревнования по CrossFit</p>
+          <a href="#">заполнить заявку</a>
+        </div>
+        <picture>
+          <source media="(max-width: 767px)" type="image/webp" srcset="img/photo-news-phone.webp, img/photo-news-phone@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-news.webp, img/photo-news@2x.webp 2x">
+          <!-- 1x: 290px; 2x: 580px -->
+          <source media="(max-width: 767px)" srcset="img/photo-news-phone.jpg, img/photo-news-phone@2x.jpg 2x">
+          <!-- 1x: 660px; 2x: 1320px -->
+          <img src="img/photo-news.jpg" srcset="img/photo-news@2x.jpg 2x" width="660" height="500" alt="Фото спортсмена">
+        </picture>
       </div>
     </section>
   </main>
