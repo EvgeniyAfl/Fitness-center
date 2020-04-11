@@ -129,11 +129,12 @@
         </div>
       </div>
     </section>
+
     <section class="suggestions">
       <div class="suggestions__wrapper">
         <h2>абонементы</h2>
         <div class="suggestions__tools-wrapper tools">
-          <button class="tools__btn" type="button">1 месяц
+          <button class="tools__btn tools__btn--active" type="button">1 месяц
             <!-- tools__btn--active-->
           </button>
           <button class="tools__btn" type="button">6 месяцев
@@ -182,6 +183,7 @@
         </div>
       </div>
     </section>
+
     <section class="promo">
       <div class="promo__wrapper">
         <h2 class="visually-hidden">Наши новости</h2>
@@ -234,6 +236,164 @@
           <!-- 1x: 660px; 2x: 1320px -->
           <img src="img/photo-news.jpg" srcset="img/photo-news@2x.jpg 2x" width="660" height="500" alt="Фото спортсмена">
         </picture>
+      </div>
+    </section>
+
+    <section class="trainers">
+      <div class="trainers__wrapper">
+        <h2 class="visually-hidden">Список тренеров</h2>
+        <h2>Тренеры</h2>
+        <button class="trainers__btn trainers__btn--left" type="button">
+          <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 1L0.999999 17L17 33"></path>
+          </svg>
+        </button>
+        <button class="trainers__btn trainers__btn--right" type="button">
+          <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L17 17L1 33"></path>
+          </svg>
+        </button>
+        <ul class="trainers__list trainers__list--hidden"> <!--trainers__list--hidden-->
+          <li class="trainers__item">
+            <div class="trainers__description description">
+              <b>Анна Павлова</b>
+              <span>Йога</span>
+              <ul class="description__list">
+                <li class="description__item">Тренер по йоге</li>
+                <li class="description__item">"Хатха-йога", Йогатерапия</li>
+                <li class="description__item">Опыт — 2 года</li>
+              </ul>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/photo-slide1.webp, img/photo-slide1@2x.webp 2x">
+              <!-- 1x: 260px; 2x: 294px -->
+              <img src="img/photo-slide1.png" srcset="img/photo-slide1@2x.png 2x" width="260" height="294" alt="Фото тренера">
+            </picture>
+            <h3>Анна Павлова</h3>
+          </li>
+          <li class="trainers__item">
+            <div class="trainers__description description">
+              <b>Алексей Лавров</b>
+              <span>Бокс</span>
+              <ul class="description__list">
+                <li class="description__item">Мастер спорта по боксу</li>
+                <li class="description__item">Призер чемпионата России по боксу</li>
+                <li class="description__item">Опыт — 9 лет</li>
+              </ul>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/photo-slide2.webp, img/photo-slide2@2x.webp 2x">
+              <!-- 1x: 260px; 2x: 294px -->
+              <img src="img/photo-slide2.png" srcset="img/photo-slide2@2x.png 2x" width="260" height="294" alt="Фото тренера">
+            </picture>
+            <h3>Алексей Лавров</h3>
+          </li>
+          <li class="trainers__item">
+            <div class="trainers__description description">
+              <b>Александр Пашков</b>
+              <span>CrossFit</span>
+              <ul class="description__list">
+                <li class="description__item">Certified Level 3 Trainer</li>
+                <li class="description__item">Победитель чемпионата России по CrossFit </li>
+                <li class="description__item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/photo-slide3.webp, img/photo-slide3@2x.webp 2x">
+              <!-- 1x: 260px; 2x: 294px -->
+              <img src="img/photo-slide3.png" srcset="img/photo-slide3@2x.png 2x" width="260" height="294" alt="Фото тренера">
+            </picture>
+            <h3>Александр Пашков</h3>
+          </li>
+          <li class="trainers__item">
+            <div class="trainers__description description">
+              <b>Мария Кетова</b>
+              <span>Тренер по детскому фитнесу</span>
+              <ul class="description__list">
+                <li class="description__item">Функциональный тренинг (Smartfit)</li>
+                <li class="description__item">Лектор обучающих семинаров</li>
+                <li class="description__item">Опыт — 4 года</li>
+              </ul>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/photo-slide4.webp, img/photo-slide4@2x.webp 2x">
+              <!-- 1x: 260px; 2x: 294px -->
+              <img src="img/photo-slide4.png" srcset="img/photo-slide4@2x.png 2x" width="260" height="294" alt="Фото тренера">
+            </picture>
+            <h3>Мария Кетова</h3>
+          </li>
+        </ul>
+
+        <ul class="trainers__list"> <!--trainers__list--hidden-->
+          <li class="trainers__item">
+            <div class="trainers__description description">
+              <b>Александр Пашков</b>
+              <span>CrossFit</span>
+              <ul class="description__list">
+                <li class="description__item">Certified Level 3 Trainer</li>
+                <li class="description__item">Победитель чемпионата России по CrossFit </li>
+                <li class="description__item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/photo-slide3.webp, img/photo-slide3@2x.webp 2x">
+              <!-- 1x: 260px; 2x: 294px -->
+              <img src="img/photo-slide3.png" srcset="img/photo-slide3@2x.png 2x" width="260" height="294" alt="Фото тренера">
+            </picture>
+            <h3>Александр Пашков</h3>
+          </li>
+          <li class="trainers__item">
+            <div class="trainers__description description">
+              <b>Мария Кетова</b>
+              <span>Тренер по детскому фитнесу</span>
+              <ul class="description__list">
+                <li class="description__item">Функциональный тренинг (Smartfit)</li>
+                <li class="description__item">Лектор обучающих семинаров</li>
+                <li class="description__item">Опыт — 4 года</li>
+              </ul>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/photo-slide4.webp, img/photo-slide4@2x.webp 2x">
+              <!-- 1x: 260px; 2x: 294px -->
+              <img src="img/photo-slide4.png" srcset="img/photo-slide4@2x.png 2x" width="260" height="294" alt="Фото тренера">
+            </picture>
+            <h3>Мария Кетова</h3>
+          </li>
+          <li class="trainers__item">
+            <div class="trainers__description description">
+              <b>Анна Павлова</b>
+              <span>Йога</span>
+              <ul class="description__list">
+                <li class="description__item">Тренер по йоге</li>
+                <li class="description__item">"Хатха-йога", Йогатерапия</li>
+                <li class="description__item">Опыт — 2 года</li>
+              </ul>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/photo-slide1.webp, img/photo-slide1@2x.webp 2x">
+              <!-- 1x: 260px; 2x: 294px -->
+              <img src="img/photo-slide1.png" srcset="img/photo-slide1@2x.png 2x" width="260" height="294" alt="Фото тренера">
+            </picture>
+            <h3>Анна Павлова</h3>
+          </li>
+          <li class="trainers__item">
+            <div class="trainers__description description">
+              <b>Алексей Лавров</b>
+              <span>Бокс</span>
+              <ul class="description__list">
+                <li class="description__item">Мастер спорта по боксу</li>
+                <li class="description__item">Призер чемпионата России по боксу</li>
+                <li class="description__item">Опыт — 9 лет</li>
+              </ul>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/photo-slide2.webp, img/photo-slide2@2x.webp 2x">
+              <!-- 1x: 260px; 2x: 294px -->
+              <img src="img/photo-slide2.png" srcset="img/photo-slide2@2x.png 2x" width="260" height="294" alt="Фото тренера">
+            </picture>
+            <h3>Алексей Лавров</h3>
+          </li>
+        </ul>
       </div>
     </section>
   </main>

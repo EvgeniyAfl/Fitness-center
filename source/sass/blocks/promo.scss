@@ -1,10 +1,34 @@
 .promo {
+  position: relative;
+
+  margin-bottom: 120px;
   padding-top: 121px;
 
   font-family: "Roboto Condense", "Roboto", sans-serif;
   font-style: normal;
   line-height: 150%;
   color: $color-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -308px;
+    right: 0;
+
+    display: block;
+    width: 320px;
+    height: 384px;
+
+    background-image: url("../img/rogue.png");
+    background-repeat: no-repeat;
+    background-position: 33px -34px;
+
+    @media (min-resolution: $retina-dppx),
+      (min-resolution: $retina-dpi) {
+      background-image: url("../img/rogue@2x.png");
+      background-size: 288px 495px;
+    }
+  }
 }
 
 .promo__wrapper {
@@ -19,6 +43,24 @@
 @media (max-width: $tablet-width) {
   .promo {
     padding-top: 96px;
+
+    &::after {
+      width: 305px;
+      height: 345px;
+
+      top: -290px;
+
+      background-image: url("../img/rogue-tablet.png");
+      background-size: auto;
+      background-position: -42px -32px;
+
+      @media (min-resolution: $retina-dppx),
+        (min-resolution: $retina-dpi) {
+        background-image: url("../img/rogue-tablet@2x.png");
+        background-size: 347px 442px;
+        background-position: -42px -32px;
+      }
+    }
   }
 
   .promo__wrapper {
@@ -40,5 +82,9 @@
 
   .promo {
     padding-top: 70px;
+
+    &::after {
+      background: none;
+    }
   }
 }

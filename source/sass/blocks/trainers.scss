@@ -1,0 +1,107 @@
+.trainers {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+}
+
+.trainers__wrapper {
+  position: relative;
+  width: 1160px;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 0;
+
+  h2 {
+    display: block;
+
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+
+    font-family: "Bebas Neue", "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 49px;
+    line-height: 100%;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: $color-dark-blue;
+  }
+}
+
+.trainers__btn {
+  position: absolute;
+  top: 228px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  svg {
+    stroke: #afafaf;
+
+    &:hover {
+      stroke: $color-black;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.trainers__btn--left {
+  left: -63px;
+}
+
+.trainers__btn--right {
+  right: -63px;
+}
+
+.trainers__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "Roboto Condense", "Roboto", sans-serif;
+  font-style: normal;
+  line-height: 150%;
+  text-align: center;
+  color: $color-white;
+}
+
+.trainers__list--hidden {
+  display: none;
+}
+
+.trainers__item {
+  position: relative;
+
+  h3 {
+    display: block;
+    margin: -55px;
+
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &:hover {
+    .trainers__description {
+      display: flex;
+    }
+
+    h3 {
+      display: none;
+    }
+  }
+}
+
+.trainers__description {
+  display: none;
+}
