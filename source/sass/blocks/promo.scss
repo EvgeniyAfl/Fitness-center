@@ -1,0 +1,44 @@
+.promo {
+  padding-top: 121px;
+
+  font-family: "Roboto Condense", "Roboto", sans-serif;
+  font-style: normal;
+  line-height: 150%;
+  color: $color-white;
+}
+
+.promo__wrapper {
+  width: 1160px;
+  height: 500px;
+  display: flex;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .promo {
+    padding-top: 96px;
+  }
+
+  .promo__wrapper {
+    width: 88%;
+    height: 292px;
+
+    img {
+      height: 292px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .promo__wrapper {
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .promo {
+    padding-top: 70px;
+  }
+}

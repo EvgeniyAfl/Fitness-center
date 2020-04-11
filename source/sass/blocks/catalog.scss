@@ -36,6 +36,10 @@
       background-image: linear-gradient(112deg, #ed0233 17.6%, #003eb7 95.3%);
 
       color: $color-white;
+
+      &:active {
+        opacity: 0.5;
+      }
     }
   }
 

@@ -16,12 +16,13 @@
     height: 384px;
 
     background-image: url("../img/rogue.png");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 33px 41px;
 
     @media (min-resolution: $retina-dppx),
       (min-resolution: $retina-dpi) {
       background-image: url("../img/rogue@2x.png");
-      background-size: cover;
+      background-size: 288px 495px;
     }
   }
 }
@@ -90,8 +91,8 @@
       @media (min-resolution: $retina-dppx),
         (min-resolution: $retina-dpi) {
         background-image: url("../img/rogue-tablet@2x.png");
-        background-size: 355px 440px;
-        background-position: -46px 27px;
+        background-size: 349px 439px;
+        background-position: -44px 25px;
       }
     }
   }
@@ -122,8 +123,10 @@
 
 @media (max-width: $mobile-width) {
   .suggestions {
+    min-height: 1488px;
+
     &::after {
-      background: none;
+      display: none;
     }
   }
 
@@ -139,11 +142,13 @@
 
   .suggestions__tools-wrapper {
     width: 100%;
+    max-width: 500px;
 
     margin-bottom: 33px;
   }
 
   .suggestions__catalog-wrapper {
     width: 100%;
+    max-width: 500px;
   }
 }
