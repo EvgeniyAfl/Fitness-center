@@ -105,3 +105,77 @@
 .trainers__description {
   display: none;
 }
+
+@media (max-width: $tablet-width) {
+  .trainers__wrapper {
+    width: 74%;
+    max-width: 660px;
+
+    h2 {
+      margin-bottom: 41px;
+
+      font-size: 42px;
+      text-align: center;
+    }
+  }
+
+  .trainers__item {
+    &:first-child,
+    &:nth-child(2) {
+      display: none;
+    }
+
+    img {
+      width: 268px;
+      height: 294px;
+    }
+  }
+
+  .trainers__btn {
+    top: 212px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .trainers__wrapper {
+    width: 71%;
+    max-width: 430px;
+
+    h2 {
+      font-size: 32px;
+    }
+  }
+
+  .trainers__item {
+    display: none;
+    max-width: 268px;
+
+    margin: 0 auto;
+
+    &:nth-child(3) {
+      display: block;
+    }
+
+    img {
+      height: 276px;
+    }
+  }
+
+  .trainers__btn {
+    top: 202px;
+
+    svg {
+      width: 10px;
+      height: 19px;
+    }
+  }
+
+  .trainers__btn--left {
+    left: -38px;
+  }
+
+  .trainers__btn--right {
+    right: -38px;
+  }
+}
+

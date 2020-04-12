@@ -4,7 +4,7 @@
   left: 0;
 
   width: 100%;
-  height: 294px;
+  height: 98%;
   display: flex;
   flex-direction: column;
 
@@ -55,4 +55,18 @@
   font-size: 14px;
   font-weight: 400;
   text-align: left;
+}
+
+@media (max-width: $tablet-width) {
+  .description__list {
+    width: 192px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .description {
+    b {
+      margin-top: 43px;
+    }
+  }
 }

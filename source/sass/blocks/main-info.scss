@@ -104,6 +104,7 @@
 @media (max-width: $tablet-width) {
   .main-info__wrapper {
     width: 88%;
+    max-width: 800px;
 
     img {
       width: 323px;
@@ -152,6 +153,7 @@
   }
 
   .main-info__wrapper {
+    max-width: 500px;
     justify-content: center;
 
     img {
