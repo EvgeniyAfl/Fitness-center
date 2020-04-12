@@ -1,0 +1,162 @@
+.advantages {
+  width: 100%;
+  min-height: 664px;
+  display: flex;
+
+  margin-bottom: 100px;
+
+  background-color: $color-gray;
+}
+
+.advantages__wrapper {
+  position: relative;
+  width: 1040px;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 0;
+
+  text-align: center;
+
+  h2 {
+    display: block;
+
+    margin: 0;
+    margin-top: 118px;
+    margin-bottom: 42px;
+
+    font-family: "Bebas Neue", "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 49px;
+    line-height: 100%;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: $color-dark-blue;
+  }
+}
+
+.advantages__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "Roboto Condense", "Roboto", sans-serif;
+  font-style: normal;
+  color: $color-dark-blue;
+}
+
+.advantages__item {
+  width: 340px;
+  display: flex;
+
+  margin-bottom: 109px;
+
+  b {
+    font-size: 71px;
+    line-height: 150%;
+    font-weight: 700;
+    color: $color-dark-blue;
+
+    background: linear-gradient(100deg, #d10a42, #0041ca 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:first-child {
+    margin-left: 19px;
+  }
+}
+
+.advantages__block {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+
+  span {
+    font-size: 14px;
+    line-height: 150%;
+    color: #2e35ac;
+  }
+}
+
+.advantages__item-container {
+  margin-left: 32px;
+
+  text-align: left;
+
+  h3 {
+    display: block;
+
+    margin-top: 24px;
+    margin-bottom: 9px;
+
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  p {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 300;
+  }
+}
+
+.advantages__container {
+  position: absolute;
+  top: 237px;
+  left: 400px;
+
+  width: 240px;
+  height: 307px;
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Roboto Condense", "Roboto", sans-serif;
+  font-style: normal;
+  line-height: 150%;
+  color: $color-white;
+
+  background-color: #1c3374;
+
+  b {
+    display: block;
+
+    margin-top: 79px;
+    margin-bottom: 35px;
+
+    font-size: 74px;
+    font-weight: 700;
+  }
+
+  h3 {
+    display: block;
+
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: none;
+  }
+
+  p {
+    display: block;
+
+    padding: 0 25px;
+    font-size: 16px;
+  }
+}
