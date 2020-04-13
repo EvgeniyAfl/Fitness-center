@@ -107,6 +107,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .trainers {
+    min-height: 478px;
+  }
+
   .trainers__wrapper {
     width: 74%;
     max-width: 660px;
@@ -137,6 +141,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .trainers {
+    min-height: 419px;
+  }
+
   .trainers__wrapper {
     width: 71%;
     max-width: 430px;
@@ -178,4 +186,3 @@
     right: -38px;
   }
 }
-
