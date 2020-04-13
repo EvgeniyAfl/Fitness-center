@@ -3,7 +3,7 @@
   min-height: 664px;
   display: flex;
 
-  margin-bottom: 100px;
+  margin-bottom: 118px;
 
   background-color: $color-gray;
 }
@@ -50,6 +50,10 @@
   font-family: "Roboto Condense", "Roboto", sans-serif;
   font-style: normal;
   color: $color-dark-blue;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__item {
@@ -122,7 +126,6 @@
 }
 
 .advantages__container {
-  display: block;
   position: absolute;
   top: 237px;
   left: 400px;
@@ -172,6 +175,8 @@
 @media (max-width: $tablet-width) {
   .advantages {
     min-height: 755px;
+
+    margin-bottom: 99px;
   }
 
   .advantages__wrapper {
@@ -252,6 +257,11 @@
 }
 
 @media (max-width: $mobile-width) {
+  .advantages {
+    margin-bottom: 68px;
+    padding-bottom: 65px;
+  }
+
   .advantages__wrapper {
     width: 100%;
 
@@ -275,7 +285,6 @@
 
     &:last-child {
       margin-bottom: 0;
-      padding-bottom: 50px;
     }
   }
 
