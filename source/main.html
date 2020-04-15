@@ -81,9 +81,9 @@
   </header>
 
   <main class="page-main">
-    <section class="reviews">
-      <div class="reviews__wrapper">
-        <div class="reviews__offers">
+    <section class="overview">
+      <div class="overview__wrapper">
+        <div class="overview__offers">
           <h2>Тренажерный зал</h2>
           <h3>Просторный зал площадью 900 кв/м</h3>
           <p>
@@ -95,7 +95,7 @@
             несколько оборудованных залов для различных видов групповых занятий.
           </p>
         </div>
-        <div class="reviews__pucture">
+        <div class="overview__pucture">
           <picture>
             <source media="(max-width: 767px)" type="image/webp"
               srcset="img/gym-photo-phone.webp, img/gym-photo-phone@2x.webp 2x">
@@ -110,8 +110,8 @@
             <img src="img/gym-photo.jpg" srcset="img/gym-photo@2x.jpg 2x" width="678" height="401"
               alt="Фото тренажерного зала">
           </picture>
-          <div class="reviews__container">
-            <button class="reviews__btn" type="button">
+          <div class="overview__container">
+            <button class="overview__btn" type="button">
               <svg width="17" height="17">
                 <use xlink:href="#icon-play"></use>
               </svg>
@@ -457,7 +457,7 @@
               <!-- 1x: 399px; 2x: 798px -->
             <source media="(max-width: 1199px)" srcset="img/photo-salles-tablet.jpg, img/photo-salles-tablet@2x.jpg 2x">
             <!-- 1x: 280px; 2x: 560px -->
-            <img src="img/photo-salles.jpg" srcset="img/photo-salles@2x.jpg" width="450" height="465" alt="фото спортсменки">
+            <img src="img/photo-salles.jpg" srcset="img/photo-salles@2x.jpg 2x" width="450" height="465" alt="фото спортсменки">
           </picture>
         </div>
         <ul class="salles__list">
@@ -470,6 +470,47 @@
             <span>Скидка 20%</span>
             <p>Корпоративный фитнес  с командой</p>
             <a href="#">подробнее</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h2 class="reviews__description">Отзывы</h2>
+      <button class="reviews__btn reviews__btn--left" type="button">
+        <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1L0.999999 17L17 33" />
+        </svg>
+      </button>
+      <button class="reviews__btn reviews__btn--right" type="button">
+        <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L17 17L1 33" />
+        </svg>
+      </button>
+      <div class="reviews__wrapper">
+        <ul class="reviews__list">
+          <li class="reviews__item">
+
+            <picture>
+              <source type="image/webp" srcset="img/photo-feedback.webp, img/photo-feedback@2x.webp 2x">
+                <!-- 1x: 80px; 2x: 160px -->
+              <img src="img/photo-feedback.png", srcset="img/photo-feedback@2x.png 2x" width="80" height="80" alt="фото клиента">
+            </picture>
+            <div class="reviews__item-container">
+              <h3>Анна Орлова</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </li>
+          <li class="reviews__item">
+            <picture>
+              <source type="image/webp" srcset="img/photo-feedback.webp, img/photo-feedback@2x.webp 2x">
+                <!-- 1x: 80px; 2x: 160px -->
+              <img src="img/photo-feedback.png", srcset="img/photo-feedback@2x.png 2x" width="80" height="80" alt="фото клиента">
+            </picture>
+            <div class="reviews__item-container">
+              <h3>Ольга Холмс</h3>
+              <p>«SuperClub - очень достойный клуб с отличным расположением, но не без недостатков»</p>
+            </div>
           </li>
         </ul>
       </div>
