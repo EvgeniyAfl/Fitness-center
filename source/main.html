@@ -20,8 +20,8 @@
       <include src="build/img/sprite_auto.svg"></include>
     </div>
     <div class="page-header__wrapper">
+      <span class="visually-hidden">Логотип сайта: Фитнес-центр</span>
       <a class="page-header__logo">
-        <span class="visually-hidden">Логотип сайта: Фитнес-центр</span>
         <svg width="89" height="20">
           <use xlink:href="#icon-Supergym-logo"></use>
         </svg>
@@ -36,7 +36,7 @@
           <h1>Фитнес центр</h1>
           <p>Тренажёрный зал Групповые занятия Кардио-зона</p>
           <span class="visually-hidden">купить абонемент</span>
-          <button class="main-info__btn" type="button">купить абонемент</button>
+          <a class="main-info__btn" href="#suggestions__anchor">купить абонемент</a>
         </div>
         <picture>
           <source media="(max-width: 1199px)" type="image/webp"
@@ -51,7 +51,7 @@
         <div class="main-info__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--fb" href="#">
+              <a href="https://www.facebook.com/" class="social__link social__link--fb" href="#">
                 <span class="visually-hidden">фэйсбук</span>
                 <svg width="12" height="9">
                   <use xlink:href="#icon-Fb"></use>
@@ -59,7 +59,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--vk" href="#">
+              <a href="https://vk.com/" class="social__link social__link--vk" href="#">
                 <span class="visually-hidden">вконтакте</span>
                 <svg width="14" height="9">
                   <use xlink:href="#icon-vk"></use>
@@ -67,7 +67,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--ig" href="#">
+              <a href="https://www.instagram.com/" class="social__link social__link--ig" href="#">
                 <span class="visually-hidden">инстаграмм</span>
                 <svg width="10" height="10">
                   <use xlink:href="#icon-ig"></use>
@@ -122,6 +122,7 @@
     </section>
 
     <section class="suggestions">
+      <a name="suggestions__anchor"></a>
       <div class="suggestions__wrapper">
         <h2>абонементы</h2>
         <div class="suggestions__tools-wrapper tools">
@@ -190,9 +191,9 @@
                   <div class="news__item-container">
                     <span>7</span>
                     <div class="news__item-wrapper">
-                    <span>Марта</span>
-                    <span>2019</span>
-                  </div>
+                      <span>Марта</span>
+                      <span>2019</span>
+                    </div>
                   </div>
                 </div>
                 <div class="news__item">
@@ -232,8 +233,8 @@
           <path d="M1 1L17 17L1 33" />
         </svg>
       </button>
-    <div class="trainers__wrapper">
-      <h2>Тренеры</h2>
+      <div class="trainers__wrapper">
+        <h2>Тренеры</h2>
         <ul class="trainers__list">
           <li class="trainers__item">
             <div class="trainers__description description">
@@ -393,8 +394,8 @@
               <span>кв/м</span>
             </div>
             <div class="advantages__item-container">
-            <h3>Площадь</h3>
-            <p>Занимайтесь без очередей</br> и толпучки</p>
+              <h3>Площадь</h3>
+              <p>Занимайтесь без очередей</br> и толпучки</p>
             </div>
           </li>
           <li class="advantages__item">
@@ -403,9 +404,9 @@
               <span>машин</span>
             </div>
             <div class="advantages__item-container">
-            <h3>Собственная парковка</h3>
-            <p>Вы всегда найдете место для своей машины на нашей парковке</p>
-          </div>
+              <h3>Собственная парковка</h3>
+              <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+            </div>
           </li>
         </ul>
         <div class="advantages__container">
@@ -420,8 +421,8 @@
               <span>мест</span>
             </div>
             <div class="advantages__item-container">
-            <h3>Комфорт</h3>
-            <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              <h3>Комфорт</h3>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
             </div>
           </li>
           <li class="advantages__item">
@@ -430,8 +431,8 @@
               <span>лет</span>
             </div>
             <div class="advantages__item-container">
-            <h3>Тренерский опыт</h3>
-            <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              <h3>Тренерский опыт</h3>
+              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
             </div>
           </li>
         </ul>
@@ -449,15 +450,18 @@
             <a href="#">подробнее</a>
           </div>
           <picture>
-            <source media="(max-width: 767px)" type="image/webp" srcset="img/photo-salles-phone.webp, img/photo-salles-phone@2x.webp 2x">
-            <source media="(max-width: 1199px)" type="image/webp" srcset="img/photo-salles-tablet.webp, img/photo-salles-tablet@2x.webp 2x">
+            <source media="(max-width: 767px)" type="image/webp"
+              srcset="img/photo-salles-phone.webp, img/photo-salles-phone@2x.webp 2x">
+            <source media="(max-width: 1199px)" type="image/webp"
+              srcset="img/photo-salles-tablet.webp, img/photo-salles-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/photo-salles.webp, img/photo-salles@2x.webp 2x">
             <!-- 1x: 290px; 2x: 580px -->
             <source media="(max-width: 767px)" srcset="img/photo-salles-phone.jpg, img/photo-salles-phone@2x.jpg 2x">
-              <!-- 1x: 399px; 2x: 798px -->
+            <!-- 1x: 399px; 2x: 798px -->
             <source media="(max-width: 1199px)" srcset="img/photo-salles-tablet.jpg, img/photo-salles-tablet@2x.jpg 2x">
             <!-- 1x: 280px; 2x: 560px -->
-            <img src="img/photo-salles.jpg" srcset="img/photo-salles@2x.jpg 2x" width="450" height="465" alt="фото спортсменки">
+            <img src="img/photo-salles.jpg" srcset="img/photo-salles@2x.jpg 2x" width="450" height="465"
+              alt="фото спортсменки">
           </picture>
         </div>
         <ul class="salles__list">
@@ -468,7 +472,7 @@
           </li>
           <li class="salles__item">
             <span>Скидка 20%</span>
-            <p>Корпоративный фитнес  с командой</p>
+            <p>Корпоративный фитнес с командой</p>
             <a href="#">подробнее</a>
           </li>
         </ul>
@@ -493,19 +497,22 @@
 
             <picture>
               <source type="image/webp" srcset="img/photo-feedback.webp, img/photo-feedback@2x.webp 2x">
-                <!-- 1x: 80px; 2x: 160px -->
-              <img src="img/photo-feedback.png", srcset="img/photo-feedback@2x.png 2x" width="80" height="80" alt="фото клиента">
+              <!-- 1x: 80px; 2x: 160px -->
+              <img src="img/photo-feedback.png" , srcset="img/photo-feedback@2x.png 2x" width="80" height="80"
+                alt="фото клиента">
             </picture>
             <div class="reviews__item-container">
               <h3>Анна Орлова</h3>
-              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
             </div>
           </li>
           <li class="reviews__item">
             <picture>
               <source type="image/webp" srcset="img/photo-feedback.webp, img/photo-feedback@2x.webp 2x">
-                <!-- 1x: 80px; 2x: 160px -->
-              <img src="img/photo-feedback.png", srcset="img/photo-feedback@2x.png 2x" width="80" height="80" alt="фото клиента">
+              <!-- 1x: 80px; 2x: 160px -->
+              <img src="img/photo-feedback.png" , srcset="img/photo-feedback@2x.png 2x" width="80" height="80"
+                alt="фото клиента">
             </picture>
             <div class="reviews__item-container">
               <h3>Ольга Холмс</h3>
@@ -516,6 +523,113 @@
       </div>
     </section>
   </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="subscription">
+        <div class="subscription__wrapper">
+          <h2>БЕСПЛАТНОЕ занятие</h2>
+          <div class="subscription__form">
+            <span class="visually-hidden">Введите Ваши данные</span>
+            <form method="POST" id="form__question" action="https://echo.htmlacademy.ru">
+              <p>
+                <!-- <label for="user-name">Имя</label> -->
+                <input id="user-name" type="text" name="login" placeholder="Имя">
+              </p>
+              <p>
+                <!-- <label for="user-phone">Телефон</label> -->
+                <input id="user-phone" type="number" name="number" placeholder="Телефон">
+              </p>
+            </form>
+          </div>
+          <button class="subscription__btn" form="form__question" type="submit">отправить</button>
+        </div>
+      </div>
+      <div class="contacts">
+        <div class="contacts__wrapper">
+          <h2>Контакты</h2>
+          <div class="contacts__container">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span>Адрес:</span>
+              <p>г. Омск, ул. 60 лет Октября, 7</p>
+            </li>
+            <li class="contacts__item">
+              <span>График работы:</span>
+              <p>Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+          </ul>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span>Телефон:</span>
+              <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
+            </li>
+            <li class="contacts__item">
+              <span>Email:</span>
+              <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__wrapper">
+        <div class="footer-bottom__logo">
+          <span class="visually-hidden">Логотип сайта: Фитнес-центр</span>
+          <a href="#">
+            <svg width="89" height="20">
+              <use xlink:href="#icon-Supergym-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer-bottom__nav navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#">Услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Абонементы</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Акции</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Тренеры</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">Расписание</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom__social social-footer">
+          <ul class="social-footer__list">
+            <li class="social-footer__item">
+              <a href="https://vk.com/">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-vk-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer__item">
+              <a href="https://www.instagram.com/">
+                <svg width="30" height="24">
+                  <use xlink:href="#icon-ig-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer__item">
+              <a href="https://www.facebook.com/">
+                <svg width="24" height="24">
+                  <use xlink:href="#icon-fb-footer"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- <script src="js/main.js"></script> -->
 </body>
 

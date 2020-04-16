@@ -1,0 +1,32 @@
+.footer-bottom {
+  background-color: #030a1a;
+
+  a {
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+.footer-bottom__wrapper {
+  width: 86%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.footer-bottom__logo {
+  a {
+    display: block;
+
+    margin-top: 5px;
+    margin-left: 6px;
+  }
+}
