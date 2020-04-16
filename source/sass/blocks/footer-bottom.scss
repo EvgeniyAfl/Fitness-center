@@ -30,3 +30,44 @@
     margin-left: 6px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .footer-bottom__wrapper {
+    width: 90%;
+
+    padding: 43px 0;
+
+    text-align: left;
+  }
+
+  .footer-bottom__logo {
+    svg {
+      width: 82px;
+      height: 18px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer-bottom__wrapper {
+    width: 91%;
+    max-width: 500px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: 15px;
+    padding: 51px 0;
+  }
+
+  .footer-bottom__logo {
+    a {
+      margin: 0;
+    }
+
+    svg {
+      width: 69px;
+      height: 15px;
+    }
+  }
+}

@@ -18,3 +18,24 @@
   width: 100%;
   display: flex;
 }
+
+@media (max-width: $tablet-width) {
+  .page-footer {
+    h2 {
+      font-size: 42px;
+      line-height: 100%;
+    }
+  }
+
+  .page-footer__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer {
+    h2 {
+      font-size: 32px;
+    }
+  }
+}

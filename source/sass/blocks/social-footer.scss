@@ -10,3 +10,30 @@
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: $tablet-width) {
+  .social-footer__list {
+    width: 91%;
+
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .social-footer {
+    width: 153px;
+
+    margin: 0;
+  }
+
+  .social-footer__list {
+    width: 100%;
+
+    margin: 0;
+
+    svg {
+      width: 32px;
+      height: 27px;
+    }
+  }
+}
