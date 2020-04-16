@@ -32,9 +32,8 @@
     font-weight: 700;
     letter-spacing: 0.03em;
 
-    margin: 0;
+    @include nullify;
     margin-bottom: 8px;
-    padding: 0;
   }
 
   h3 {
@@ -44,9 +43,8 @@
     font-weight: 400;
     text-transform: none;
 
-    margin: 0;
+    @include nullify;
     margin-bottom: 30px;
-    padding: 0;
   }
 
   p {
@@ -56,8 +54,7 @@
     font-weight: 300;
     text-transform: none;
 
-    margin: 0;
-    padding: 0;
+    @include nullify;
     padding-top: 9px;
   }
 }
@@ -95,6 +92,7 @@
   &::before {
     position: inherit;
     content: "";
+
     width: inherit;
     height: inherit;
 
@@ -176,8 +174,7 @@
   .overview__offers {
     width: 100%;
 
-    margin: 0;
-    padding: 0;
+    @include nullify;
 
     text-align: center;
 

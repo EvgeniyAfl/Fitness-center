@@ -26,12 +26,8 @@
     margin-top: 118px;
     margin-bottom: 42px;
 
-    font-family: "Bebas Neue", "Roboto", sans-serif;
-    font-style: normal;
-    font-size: 49px;
+    @include h2styles;
     line-height: 100%;
-    font-weight: 700;
-    letter-spacing: 0.03em;
     color: $color-dark-blue;
   }
 }
@@ -115,8 +111,7 @@
   p {
     display: block;
 
-    margin: 0;
-    padding: 0;
+    @include nullify;
     padding-right: 10px;
 
     font-size: 16px;
@@ -155,9 +150,9 @@
   h3 {
     display: block;
 
-    margin: 0;
+    @include nullify;
     margin-bottom: 24px;
-    padding: 0;
+
 
     font-size: 26px;
     font-weight: 700;

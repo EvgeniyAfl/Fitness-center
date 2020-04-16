@@ -58,8 +58,7 @@
   p {
     width: 190px;
 
-    margin: 0;
-    padding: 0;
+    @include nullify;
   }
 }
 
@@ -101,10 +100,9 @@
   .subscription__wrapper {
     width: 61.5%;
 
-    margin: 0;
+    @include nullify;
     margin-top: 69px;
     margin-left: 133px;
-    padding: 0;
   }
 
   .subscription__form {

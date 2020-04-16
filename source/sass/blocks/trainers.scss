@@ -15,16 +15,11 @@
   h2 {
     display: block;
 
-    margin: 0;
+    @include nullify;
     margin-bottom: 50px;
-    padding: 0;
 
-    font-family: "Bebas Neue", "Roboto", sans-serif;
-    font-style: normal;
-    font-size: 49px;
+    @include h2styles;
     line-height: 100%;
-    font-weight: 700;
-    letter-spacing: 0.03em;
     color: $color-dark-blue;
   }
 }
@@ -63,8 +58,7 @@
 .trainers__list {
   display: flex;
 
-  margin: 0;
-  padding: 0;
+  @include nullify;
 
   font-family: "Roboto Condense", "Roboto", sans-serif;
   font-style: normal;
@@ -162,6 +156,7 @@
 
   .trainers__item {
     flex: 0 0 228px;
+
     margin: 0;
 
     img {

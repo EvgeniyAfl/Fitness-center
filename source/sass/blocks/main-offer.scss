@@ -22,9 +22,8 @@
   h3 {
     display: block;
 
-    margin: 0;
+    @include nullify;
     margin-top: -25px;
-    padding: 0;
 
     font-size: 70px;
     line-height: 156%;
@@ -32,8 +31,7 @@
   }
 
   p {
-    margin: 0;
-    padding: 0;
+    @include nullify;
     padding-right: 40px;
 
     font-size: 18px;

@@ -8,8 +8,7 @@
   display: flex;
   flex-direction: column;
 
-  margin: 0;
-  padding: 0;
+  @include nullify;
 
   font-family: "Roboto Condense", "Roboto", sans-serif;
   font-style: normal;
@@ -21,9 +20,8 @@
   z-index: 10;
 
   b {
-    margin: 0;
+    @include nullify;
     margin-top: 52px;
-    padding: 0;
 
     font-size: 18px;
     font-weight: 700;

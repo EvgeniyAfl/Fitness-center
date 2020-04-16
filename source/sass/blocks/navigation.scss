@@ -8,9 +8,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  margin: 0;
+  @include nullify;
   margin-left: 11px;
-  padding: 0;
 
   a {
     font-family: "Roboto Condense", "Roboto", sans-serif;

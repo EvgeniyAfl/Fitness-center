@@ -6,16 +6,11 @@
   h2 {
     display: block;
 
-    margin: 0;
+    @include nullify;
     margin-bottom: 52px;
-    padding: 0;
 
-    font-family: "Bebas Neue", "Roboto", sans-serif;
-    font-style: normal;
-    font-size: 49px;
+    @include h2styles;
     line-height: 100%;
-    font-weight: 700;
-    letter-spacing: 0.03em;
     color: $color-dark-blue;
     text-align: center;
   }
@@ -47,8 +42,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  margin: 0;
-  padding: 0;
+  @include nullify;
 
   color: #1c3374;
 }
@@ -74,9 +68,8 @@
   p {
     display: block;
 
-    margin: 0;
+    @include nullify;
     margin-bottom: 70px;
-    padding: 0;
 
     font-size: 16px;
     line-height: 140%;

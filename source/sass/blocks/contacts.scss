@@ -50,8 +50,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  margin: 0;
-  padding: 0;
+  @include nullify;
 
   &:first-child {
     margin-left: 5px;
@@ -68,8 +67,7 @@
   }
 
   p {
-    margin: 0;
-    padding: 0;
+    @include nullify;
 
     font-size: 14px;
     font-weight: 400;
@@ -102,10 +100,9 @@
   .contacts__wrapper {
     width: 61.5%;
 
-    margin: 0;
+    @include nullify;
     margin-top: 69px;
     margin-left: 133px;
-    padding: 0;
   }
 
   .contacts__container {
