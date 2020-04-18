@@ -147,10 +147,11 @@
 
 @media (max-width: $mobile-width) {
   .main-info {
-    min-height: 434px;
+    min-height: 432px;
   }
 
   .main-info__wrapper {
+    width: 91%;
     max-width: 500px;
     justify-content: center;
 
@@ -164,7 +165,7 @@
       font-size: 28px;
       line-height: 28px;
 
-      margin-bottom: 13px;
+      margin-bottom: 11px;
     }
 
     h1 {
@@ -175,7 +176,7 @@
     }
 
     p {
-      top: 162px;
+      top: 160px;
     }
   }
 

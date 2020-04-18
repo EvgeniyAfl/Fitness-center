@@ -93,7 +93,7 @@
 
 .reviews__btn {
   position: absolute;
-  top: 52%;
+  top: 44%;
 
   border: none;
   background: transparent;
@@ -136,9 +136,6 @@
     width: 566px;
   }
 
-  .reviews__btn {
-    top: 50%;
-  }
 
   .reviews__btn--left {
     left: 5%;
@@ -149,6 +146,8 @@
   }
 
   .reviews__item {
+    max-width: 566px;
+
     img {
       margin-top: 62px;
       margin-left: 65px;
@@ -196,7 +195,7 @@
 
     h3 {
       position: absolute;
-      top: -62px;
+      top: -60px;
       right: 0;
 
       width: 77px;

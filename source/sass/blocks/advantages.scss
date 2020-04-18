@@ -140,7 +140,7 @@
   b {
     display: block;
 
-    margin-top: 79px;
+    margin-top: 80px;
     margin-bottom: 35px;
 
     font-size: 74px;
@@ -215,7 +215,7 @@
 
     h3 {
       margin-top: 18px;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
 
       font-size: 20px;
     }
@@ -307,6 +307,10 @@
 
     p {
       padding: 0 27px;
+
+      &:first-child {
+        padding: 49px;
+      }
 
       br {
         display: none;

@@ -1,0 +1,105 @@
+.page-shedule {
+  h1 {
+    display: block;
+
+    margin-top: 118px;
+    margin-bottom: 44px;
+    margin-left: auto;
+
+    @include h2styles;
+    line-height: 100%;
+    color: $color-dark-blue;
+    text-align: center;
+  }
+}
+
+.page-shedule__container {
+  display: flex;
+  width: 1160px;
+
+  margin: 0 auto;
+
+  font-family: "Roboto Condense", "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-dark-blue;
+  text-transform: none;
+}
+
+.page-shedule__table {
+  display: table;
+  width: 1099px;
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 120px;
+
+  border-collapse: separate;
+  border-spacing: 7px 8px;
+
+  ul {
+    @include nullify;
+  }
+}
+
+.page-shedule__buttons {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .page-shedule {
+    h1 {
+      margin-top: 79px;
+      margin-bottom: 32px;
+
+      font-size: 42px;
+    }
+  }
+
+  .page-shedule__container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .page-shedule__table {
+    width: 175%;
+  }
+
+  .page-shedule__wrapper {
+    width: 100%;
+    max-width: 621px;
+
+    margin-left: 107px;
+    margin-right: 40px;
+
+    overflow-x: scroll;
+    overflow-y: visible;
+  }
+
+  .page-shedule__buttons {
+    position: absolute;
+    bottom: 120px;
+    left: 116px;
+
+    width: 607px;
+    display: flex;
+    justify-content: space-between;
+    height: 4px;
+
+    background: #feebef;
+
+    cursor: pointer;
+  }
+
+  .page-shedule__btn {
+    width: 50%;
+
+    border: none;
+    background: transparent;
+  }
+
+  .page-shedule__btn--active {
+    background: #ed0233;
+  }
+}

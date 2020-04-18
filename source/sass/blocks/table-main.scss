@@ -1,0 +1,28 @@
+.table-main {
+  display: table-row-group;
+}
+
+.table-main__list {
+  display: table-row;
+}
+
+.table-main__item {
+  display: table-cell;
+  width: 148px;
+
+  padding-top: 42px;
+  padding-bottom: 41px;
+
+  line-height: 150%;
+  text-align: center;
+  background-color: $color-gray;
+}
+
+@media (max-width: $tablet-width) {
+  .table-main__item {
+    width: 147px;
+
+    padding-top: 41px;
+    padding-bottom: 40px;
+  }
+}

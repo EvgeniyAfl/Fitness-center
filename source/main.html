@@ -36,7 +36,6 @@
           <h1>Фитнес центр</h1>
           <p>Тренажёрный зал Групповые занятия Кардио-зона</p>
           <span class="visually-hidden">купить абонемент</span>
-          <a class="main-info__btn" href="#suggestions__anchor">купить абонемент</a>
         </div>
         <picture>
           <source media="(max-width: 1199px)" type="image/webp"
@@ -122,7 +121,6 @@
     </section>
 
     <section class="suggestions">
-      <a name="suggestions__anchor"></a>
       <div class="suggestions__wrapper">
         <h2>абонементы</h2>
         <div class="suggestions__tools-wrapper tools">
@@ -136,7 +134,8 @@
           <div class="tools__full-range"></div>
         </div>
         <div class="suggestions__catalog-wrapper catalog">
-          <ul class="catalog__list">
+          <ul class="catalog__list catalog__list--active">
+            <!--catalog__list--active-->
             <li class="catalog__item">
               <h3>С тренером</h3>
               <span>12 занятий</span>
@@ -149,7 +148,6 @@
               <a href="#">купить абонемент</a>
             </li>
             <li class="catalog__item">
-              <!-- catalog__item--active -->
               <h3>Дневной</h3>
               <span>с 8:00 до 17:00</span>
               <div class="catalog__price">1700
@@ -165,6 +163,76 @@
               <span>с 8:00 до 22:00</span>
               <div class="catalog__price">2700
                 <b>2700</b>
+                <svg width="30" height="42">
+                  <use xlink:href="#icon-ruble"></use>
+                </svg>
+              </div>
+              <a href="#">купить абонемент</a>
+            </li>
+          </ul>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <h3>С тренером</h3>
+              <span>72 занятия</span>
+              <div class="catalog__price">30000
+                <b>30000</b>
+                <svg width="30" height="42">
+                  <use xlink:href="#icon-ruble"></use>
+                </svg>
+              </div>
+              <a href="#">купить абонемент</a>
+            </li>
+            <li class="catalog__item">
+              <h3>Дневной</h3>
+              <span>с 8:00 до 17:00</span>
+              <div class="catalog__price">10000
+                <b>10000</b>
+                <svg width="30" height="42">
+                  <use xlink:href="#icon-ruble"></use>
+                </svg>
+              </div>
+              <a href="#">купить абонемент</a>
+            </li>
+            <li class="catalog__item">
+              <h3>Полный день</h3>
+              <span>с 8:00 до 22:00</span>
+              <div class="catalog__price">16000
+                <b>16000</b>
+                <svg width="30" height="42">
+                  <use xlink:href="#icon-ruble"></use>
+                </svg>
+              </div>
+              <a href="#">купить абонемент</a>
+            </li>
+          </ul>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <h3>С тренером</h3>
+              <span>144 занятия</span>
+              <div class="catalog__price">60000
+                <b>60000</b>
+                <svg width="30" height="42">
+                  <use xlink:href="#icon-ruble"></use>
+                </svg>
+              </div>
+              <a href="#">купить абонемент</a>
+            </li>
+            <li class="catalog__item">
+              <h3>Дневной</h3>
+              <span>с 8:00 до 17:00</span>
+              <div class="catalog__price">20000
+                <b>20000</b>
+                <svg width="30" height="42">
+                  <use xlink:href="#icon-ruble"></use>
+                </svg>
+              </div>
+              <a href="#">купить абонемент</a>
+            </li>
+            <li class="catalog__item">
+              <h3>Полный день</h3>
+              <span>с 8:00 до 22:00</span>
+              <div class="catalog__price">32000
+                <b>32000</b>
                 <svg width="30" height="42">
                   <use xlink:href="#icon-ruble"></use>
                 </svg>
@@ -427,12 +495,12 @@
           </li>
           <li class="advantages__item">
             <div class="advantages__block">
-              <b>5+</b>
+              <b>5+ </b>
               <span>лет</span>
             </div>
             <div class="advantages__item-container">
-              <h3>Тренерский опыт</h3>
-              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              <h3> Тренерский опыт</h3>
+              <p> Добивайтесь своих целей быстрее с профессиональным тренером</p>
             </div>
           </li>
         </ul>
@@ -498,7 +566,7 @@
             <picture>
               <source type="image/webp" srcset="img/photo-feedback.webp, img/photo-feedback@2x.webp 2x">
               <!-- 1x: 80px; 2x: 160px -->
-              <img src="img/photo-feedback.png" , srcset="img/photo-feedback@2x.png 2x" width="80" height="80"
+              <img src="img/photo-feedback.png" srcset="img/photo-feedback@2x.png 2x" width="80" height="80"
                 alt="фото клиента">
             </picture>
             <div class="reviews__item-container">
@@ -511,7 +579,7 @@
             <picture>
               <source type="image/webp" srcset="img/photo-feedback.webp, img/photo-feedback@2x.webp 2x">
               <!-- 1x: 80px; 2x: 160px -->
-              <img src="img/photo-feedback.png" , srcset="img/photo-feedback@2x.png 2x" width="80" height="80"
+              <img src="img/photo-feedback.png" srcset="img/photo-feedback@2x.png 2x" width="80" height="80"
                 alt="фото клиента">
             </picture>
             <div class="reviews__item-container">
@@ -631,6 +699,7 @@
     </div>
   </footer>
   <!-- <script src="js/main.js"></script> -->
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

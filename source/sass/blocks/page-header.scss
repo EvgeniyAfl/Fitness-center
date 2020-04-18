@@ -16,7 +16,7 @@
 }
 
 .page-header__wrapper {
-  width: 1165px;
+  width: 1160px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -40,8 +40,12 @@
   }
 }
 
-.page-header__logo svg {
-  height: 20px;
+.page-header__logo {
+  flex: 1 1 auto;
+
+  svg {
+    height: 20px;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -79,11 +83,12 @@
 
 @media (max-width: $mobile-width) {
   .page-header__wrapper {
+    width: 91%;
     padding-top: 20px;
   }
 
   .page-header {
-    margin-bottom: 67px;
+    margin-bottom: 69px;
 
     background-position: -117px -50px;
 

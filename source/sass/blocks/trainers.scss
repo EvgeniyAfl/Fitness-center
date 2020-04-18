@@ -1,7 +1,7 @@
 .trainers {
   position: relative;
   width: 100%;
-  min-height: 513px;
+  min-height: 515px;
 }
 
 .trainers__wrapper {
@@ -16,7 +16,8 @@
     display: block;
 
     @include nullify;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
+    margin-left: 2px;
 
     @include h2styles;
     line-height: 100%;

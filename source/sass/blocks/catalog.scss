@@ -1,10 +1,14 @@
 .catalog__list {
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: space-between;
   flex-wrap: wrap;
 
   @include nullify;
+}
+
+.catalog__list--active {
+  display: flex;
 }
 
 .catalog__item {
@@ -30,11 +34,21 @@
     border-image: linear-gradient(to right bottom, #d10a42 5%, #00359f 100%);
     border-image-slice: 1;
 
+    b {
+      top: 130px;
+      left: 71px;
+    }
+
     a {
+      padding: 27px 0;
       border: none;
       background-image: linear-gradient(112deg, #ed0233 17.6%, #003eb7 95.3%);
 
       color: $color-white;
+
+      &:hover {
+        opacity: 0.7;
+      }
 
       &:active {
         opacity: 0.5;
@@ -83,25 +97,7 @@
   }
 }
 
-.catalog__item--active {
-  width: 360px;
-
-  padding-top: 56px;
-
-  border: 7px solid transparent;
-  border-image: linear-gradient(to right bottom, #d10a42 5%, #00359f 100%);
-  border-image-slice: 1;
-
-  a {
-    border: none;
-    background-image: linear-gradient(112deg, #ed0233 17.6%, #003eb7 95.3%);
-
-    color: $color-white;
-  }
-}
-
 .catalog__price {
-  position: relative;
   display: block;
 
   margin: 0 auto;
@@ -116,8 +112,8 @@
   b {
     display: block;
     position: absolute;
-    top: -58%;
-    left: -12%;
+    top: 137px;
+    left: 77px;
 
     font-size: 100px;
     line-height: 150%;
@@ -129,9 +125,10 @@
 
 @media (max-width: $tablet-width) {
   .catalog__item {
-    width: 100%;
+    width: 442px;
     min-height: 448px;
 
+    margin: 0 auto;
     margin-bottom: 40px;
 
     a {
@@ -140,6 +137,16 @@
 
     &:hover {
       width: 100%;
+
+      b {
+        left: 26%;
+      }
+    }
+  }
+
+  .catalog__price {
+    b {
+      left: 27%;
     }
   }
 }
@@ -151,6 +158,9 @@
     font-size: 48px;
 
     b {
+      top: 31%;
+      left: 22%;
+
       font-size: 80px;
     }
 
@@ -161,10 +171,28 @@
   }
 
   .catalog__item {
+    width: 290px;
     min-height: 385px;
 
     margin-bottom: 35px;
     padding-top: 52px;
+
+    &:hover {
+      width: 290px;
+
+      padding-top: 44px;
+
+      a {
+        width: 75%;
+
+        padding: 25px 0;
+      }
+
+      b {
+        top: 30%;
+        left: 21%;
+      }
+    }
 
     h3 {
       font-size: 22px;

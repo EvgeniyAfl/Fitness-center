@@ -53,6 +53,8 @@
   @include nullify;
 
   &:first-child {
+    flex: 1 1 auto;
+
     margin-left: 5px;
   }
 
