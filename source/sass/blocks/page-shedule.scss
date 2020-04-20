@@ -1,4 +1,6 @@
 .page-shedule {
+  padding-bottom: 120px;
+
   h1 {
     display: block;
 
@@ -32,7 +34,6 @@
 
   margin: 0;
   padding: 0;
-  padding-bottom: 120px;
 
   border-collapse: separate;
   border-spacing: 7px 8px;
@@ -79,7 +80,7 @@
 
   .page-shedule__buttons {
     position: absolute;
-    bottom: 120px;
+    bottom: 0;
     left: 116px;
 
     width: 607px;
@@ -101,5 +102,33 @@
 
   .page-shedule__btn--active {
     background: #ed0233;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-shedule {
+    h1 {
+      margin-top: 69px;
+      margin-bottom: 35px;
+
+      font-size: 32px;
+    }
+  }
+
+  .page-shedule__container {
+    font-size: 16px;
+  }
+
+  .page-shedule__table {
+    width: 100%;
+  }
+
+  .page-shedule__wrapper {
+    margin-left: 76px;
+    margin-right: 13px;
+  }
+
+  .page-shedule__buttons {
+    display: none;
   }
 }

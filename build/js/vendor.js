@@ -212,12 +212,12 @@
           // interpret `max-` as <=
           /max-([a-z-\s]+):/g, 'e.$1<=',
 
-          //calc value
+          // calc value
           /calc([^)]+)/g, '($1)',
 
           // interpret css values
           /(\d+[\.]*[\d]*)([a-z]+)/g, '($1 * e.$2)',
-          //make eval less evil
+          // make eval less evil
           /^(?!(e.[a-z]|[0-9\.&=|><\+\-\*\(\)\/])).*/ig, ''
       ) + ';';
     });
@@ -1164,9 +1164,9 @@
   pf.getEmValue = function () {
     var body;
     if (!eminpx && (body = document.body)) {
-      var div = document.createElement('div'),
-        originalHTMLCSS = docElem.style.cssText,
-        originalBodyCSS = body.style.cssText;
+      var div = document.createElement('div');
+      var originalHTMLCSS = docElem.style.cssText;
+      var originalBodyCSS = body.style.cssText;
 
       div.style.cssText = baseStyle;
 
@@ -1179,7 +1179,7 @@
       eminpx = div.offsetWidth;
       body.removeChild(div);
 
-      //also update eminpx before returning
+      // also update eminpx before returning
       eminpx = parseFloat(eminpx, 10);
 
       // restore the original values
@@ -1235,15 +1235,15 @@
     if (!candidates.length) {
       return;
     }
-    var candidate,
-      i,
-      j,
-      length,
-      bestCandidate,
-      curSrc,
-      curCan,
-      candidateSrc,
-      abortCurSrc;
+    var candidate;
+    var i;
+    var j;
+    var length;
+    var bestCandidate;
+    var curSrc;
+    var curCan;
+    var candidateSrc;
+    var abortCurSrc;
 
     var imageData = img[pf.ns];
     var dpr = pf.DPR;
@@ -1330,7 +1330,9 @@
   };
 
   pf.getSet = function (img) {
-    var i, set, supportsType;
+    var i;
+    var set;
+    var supportsType;
     var match = false;
     var sets = img[pf.ns].sets;
 
@@ -1353,7 +1355,10 @@
   };
 
   pf.parseSets = function (element, parent, options) {
-    var srcsetAttribute, imageSet, isWDescripor, srcsetParsed;
+    var srcsetAttribute;
+    var imageSet;
+    var isWDescripor;
+    var srcsetParsed;
 
     var hasPicture = parent && parent.nodeName.toUpperCase() === 'PICTURE';
     var imageData = element[pf.ns];
@@ -1499,7 +1504,8 @@
       // Also attach picturefill on resize and readystatechange
       // http://modernjavascript.blogspot.com/2013/08/building-better-debounce.html
       var debounce = function (func, wait) {
-        var timeout, timestamp;
+        var timeout;
+        var timestamp;
         var later = function () {
           var last = (new Date()) - timestamp;
 
@@ -1534,7 +1540,7 @@
   }
 
   pf.picturefill = picturefill;
-  //use this internally for easy monkey patching/performance testing
+  // use this internally for easy monkey patching/performance testing
   pf.fillImgs = picturefill;
   pf.teardownRun = noop;
 

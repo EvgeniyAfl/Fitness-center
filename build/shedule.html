@@ -17,11 +17,11 @@
 <body>
   <section class="page-shedule">
     <h1>Расписание</h1>
-    <div class="page-shedule__container">
+    <div class="page-shedule__container page-shedule__container--open">
       <div class="page-shedule__column column">
         <ul class="column__list">
           <li class="column__item"></li>
-          <li class="column__item">08:00</li>
+          <li class="column__item column__item--active">08:00</li>
           <li class="column__item">12:00</li>
           <li class="column__item">18:00</li>
           <li class="column__item">20:00</li>
@@ -30,8 +30,9 @@
       <div class="page-shedule__wrapper">
         <div class="page-shedule__table">
           <div class="table-header">
+            <button class="table-header__btn" type="button"><span class="visually-hidden">Открыть список дней</span></button>
             <ul class="table-header__list">
-              <li class="table-header__item">Понедельник</li>
+              <li class="table-header__item table-header__item--active">Понедельник</li>
               <li class="table-header__item">Вторник</li>
               <li class="table-header__item">Среда</li>
               <li class="table-header__item">Четверг</li>
@@ -41,8 +42,8 @@
             </ul>
           </div>
           <div class="table-main">
-            <ul class="table-main__list">
-              <li class="table-main__item">CrossFit</li>
+            <ul class="table-main__list table-main__list--active">
+              <li class="table-main__item table-main__item--active">CrossFit</li>
               <li class="table-main__item">Aerostretching</li>
               <li class="table-main__item">Hot Iron</li>
               <li class="table-main__item">Pilates</li>
