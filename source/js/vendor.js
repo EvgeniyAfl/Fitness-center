@@ -200,25 +200,25 @@
     var buildStr = memoize(function (css) {
 
       return 'return ' + replace((css || '').toLowerCase(),
-      // interpret `and`
-          /\band\b/g, '&&',
+        // interpret `and`
+        /\band\b/g, '&&',
 
-          // interpret `,`
-          /,/g, '||',
+        // interpret `,`
+        /,/g, '||',
 
-          // interpret `min-` as >=
-          /min-([a-z-\s]+):/g, 'e.$1>=',
+        // interpret `min-` as >=
+        /min-([a-z-\s]+):/g, 'e.$1>=',
 
-          // interpret `max-` as <=
-          /max-([a-z-\s]+):/g, 'e.$1<=',
+        // interpret `max-` as <=
+        /max-([a-z-\s]+):/g, 'e.$1<=',
 
-          // calc value
-          /calc([^)]+)/g, '($1)',
+        // calc value
+        /calc([^)]+)/g, '($1)',
 
-          // interpret css values
-          /(\d+[\.]*[\d]*)([a-z]+)/g, '($1 * e.$2)',
-          // make eval less evil
-          /^(?!(e.[a-z]|[0-9\.&=|><\+\-\*\(\)\/])).*/ig, ''
+        // interpret css values
+        /(\d+[\.]*[\d]*)([a-z]+)/g, '($1 * e.$2)',
+        // make eval less evil
+        /^(?!(e.[a-z]|[0-9\.&=|><\+\-\*\(\)\/])).*/ig, ''
       ) + ';';
     });
 

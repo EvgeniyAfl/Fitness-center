@@ -25,7 +25,7 @@
 }
 
 .reviews__wrapper {
-  width: 560px;
+  width: 675px;
   overflow: hidden;
 
   margin: 0 auto;
@@ -33,7 +33,7 @@
 }
 
 .reviews__list {
-  width: 100%;
+  width: 560px;
   height: 242px;
   display: flex;
 
@@ -45,10 +45,11 @@
 
 .reviews__item {
   display: flex;
-  flex: 0 0 100%;
+  width: 100%;
   max-width: 560px;
+  height: 242px;
 
-  margin-right: 45px;
+  @include nullify;
 
   background-color: #1c3374;
 
@@ -133,7 +134,7 @@
   }
 
   .reviews__wrapper {
-    width: 566px;
+    width: 680px;
   }
 
 
@@ -166,16 +167,23 @@
   }
 
   .reviews__wrapper {
-    width: 226px;
+    width: 295px;
   }
 
   .reviews__list {
+    width: 226px;
     height: 335px;
+
+    margin: 0 auto;
   }
 
   .reviews__item {
-    margin: 0;
+    width: 100%;
+    max-width: 226px;
+    height: 335px;
     flex-direction: column;
+
+    margin: 0;
 
     img {
       width: 68px;

@@ -58,6 +58,7 @@
           <h1>Фитнес центр</h1>
           <p>Тренажёрный зал Групповые занятия Кардио-зона</p>
           <span class="visually-hidden">купить абонемент</span>
+          <a href="#suggestion" class="main-info__btn">купить абонемент</a>
         </div>
         <picture>
           <source media="(max-width: 1199px)" type="image/webp" srcset="img/main-photo-tablet.webp, img/main-photo-tablet@2x.webp 2x">
@@ -128,6 +129,7 @@
           </picture>
           <div class="overview__container">
             <button class="overview__btn" type="button">
+              <span class="visually-hidden">Воспроизвести видео</span>
               <svg width="17" height="17">
                 <use xlink:href="#icon-play"></use>
               </svg>
@@ -137,7 +139,7 @@
       </div>
     </section>
 
-    <section class="suggestions">
+    <section class="suggestions" id="suggestion">
       <div class="suggestions__wrapper">
         <h2>абонементы</h2>
         <div class="suggestions__tools-wrapper tools">
@@ -306,16 +308,6 @@
 
     <section class="trainers">
       <h2 class="visually-hidden">Список тренеров</h2>
-      <button class="trainers__btn trainers__btn--left" type="button">
-        <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17 1L0.999999 17L17 33"></path>
-        </svg>
-      </button>
-      <button class="trainers__btn trainers__btn--right" type="button">
-        <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L17 17L1 33"></path>
-        </svg>
-      </button>
       <div class="trainers__wrapper">
         <h2>Тренеры</h2>
         <ul class="trainers__list">
@@ -553,20 +545,21 @@
 
     <section class="reviews">
       <h2 class="reviews__description">Отзывы</h2>
-      <button class="reviews__btn reviews__btn--left" type="button">
+      <!-- <button class="reviews__btn reviews__btn--left" type="button">
+        <span class="visually-hidden">Предыдущий отзыв</span>
         <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17 1L0.999999 17L17 33"></path>
+          <path d="M17 1L0.999999 17L17 33" />
         </svg>
       </button>
       <button class="reviews__btn reviews__btn--right" type="button">
+        <span class="visually-hidden">Следующий отзыв</span>
         <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L17 17L1 33"></path>
+          <path d="M1 1L17 17L1 33" />
         </svg>
-      </button>
+      </button> -->
       <div class="reviews__wrapper">
         <ul class="reviews__list">
           <li class="reviews__item">
-
             <picture>
               <source type="image/webp" srcset="img/photo-feedback.webp, img/photo-feedback@2x.webp 2x">
               <!-- 1x: 80px; 2x: 160px -->
@@ -603,12 +596,14 @@
             <span class="visually-hidden">Введите Ваши данные</span>
             <form method="POST" id="form__question" action="https://echo.htmlacademy.ru">
               <p>
-                <!-- <label for="user-name">Имя</label> -->
+                <span class="visually-hidden">Ваше имя</span>
                 <input id="user-name" type="text" name="login" placeholder="Имя">
+                <label for="user-name" class="visually-hidden">Имя</label>
               </p>
               <p>
-                <!-- <label for="user-phone">Телефон</label> -->
+                <span class="visually-hidden">Ваш номер телефона</span>
                 <input id="user-phone" type="number" name="number" placeholder="Телефон">
+                <label for="user-phone" class="visually-hidden">Телефон</label>
               </p>
             </form>
           </div>
@@ -700,8 +695,14 @@
       </div>
     </div>
   </footer>
-  <!-- <script src="js/main.js"></script> -->
-  <script src="js/vendor.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/vendor.js"></script>
+
+
+
 </body>
 
 </html>

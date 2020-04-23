@@ -3,29 +3,33 @@ var pageBody = document.querySelector('.page-body');
 
 pageBody.classList.remove('page-body--nojs');
 
-var trainersSection = document.querySelector('.trainers');
-
-/* конфигурация */
-var width = 300; // ширина картинки
-var count = 4; // видимое количество изображений
-
-var list = trainersSection.querySelector('.trainers__list');
-var listElems = trainersSection.querySelectorAll('.trainers__item');
-
-var position = 0; // положение ленты прокрутки
-
-trainersSection.querySelector('.trainers__btn--left').onclick = function () {
-  // сдвиг влево
-  position += width * count;
-  // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-  position = Math.min(position, 0);
-  list.style.marginLeft = position + 'px';
-};
-
-trainersSection.querySelector('.trainers__btn--right').onclick = function () {
-  // сдвиг вправо
-  position -= width * count;
-  // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-  position = Math.max(position, -width * (listElems.length - count));
-  list.style.marginLeft = position + 'px';
-};
+$(document).ready(function () {
+  $('.trainers__list').slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [{
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+  $('.reviews__list').slick();
+});
