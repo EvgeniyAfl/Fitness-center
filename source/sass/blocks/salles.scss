@@ -31,8 +31,20 @@
   height: 462px;
   display: flex;
 
+  background-image: url("../img/photo-salles.jpg");
+  background-repeat: no-repeat;
+  background-position: 280px 0;
+
+  @media (min-resolution: $retina-dppx),
+    (min-resolution: $retina-dpi) {
+    background-image: url("../img/photo-salles@2x.jpg");
+    background-size: contain;
+  }
+
   img {
+    display: none;
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -137,6 +149,12 @@
     padding: 0;
 
     text-align: left;
+
+    background: none;
+
+    img {
+      display: block;
+    }
   }
 
   .salles__list {
@@ -186,13 +204,24 @@
 
   .salles__container {
     width: 100%;
-    height: auto;
+    max-width: 290px;
+    min-height: 600px;
     flex-direction: column;
 
-    margin-bottom: 24px;
+    margin-bottom: 30px;
+
+    background-image: url("../img/photo-salles-phone.jpg");
+    background-repeat: no-repeat;
+    background-position: center 301px;
+
+    @media (min-resolution: $retina-dppx),
+      (min-resolution: $retina-dpi) {
+      background-image: url("../img/photo-salles-phone@2x.jpg");
+      background-size: contain;
+    }
 
     img {
-      width: 100%;
+      display: none;
     }
   }
 

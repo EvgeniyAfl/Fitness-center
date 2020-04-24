@@ -120,7 +120,7 @@
 
 @media (max-width: $mobile-width) {
   .suggestions {
-    min-height: 1488px;
+    min-height: 1503px;
 
     &::after {
       display: none;
@@ -131,7 +131,7 @@
     width: 90%;
     max-width: 420px;
 
-    padding-top: 65px;
+    padding-top: 80px;
 
     h2 {
       font-size: 32px;

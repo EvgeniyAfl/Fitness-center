@@ -107,6 +107,9 @@
     img {
       width: 323px;
       height: 390px;
+
+      object-fit: cover;
+      object-position: -13px 0;
     }
   }
 

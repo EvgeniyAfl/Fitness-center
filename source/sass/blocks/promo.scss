@@ -80,8 +80,22 @@
   .promo__wrapper {
     flex-direction: column;
     width: 90%;
-    max-width: 420px;
+    max-width: 290px;
     min-height: 594px;
+
+    background-image: url("../img/photo-news-phone.jpg");
+    background-repeat: no-repeat;
+    background-position: center 292px;
+
+    @media (min-resolution: $retina-dppx),
+      (min-resolution: $retina-dpi) {
+      background-image: url("../img/photo-news-phone@2x.jpg");
+      background-size: contain;
+    }
+
+    img {
+      display: none;
+    }
   }
 
   .promo {
