@@ -3,6 +3,10 @@ var pageBody = document.querySelector('.page-body');
 
 pageBody.classList.remove('page-body--nojs');
 
+// При наведении на занятие подсвечивается соответствующий день и время.
+// Стиль при наведении/время column__item--active
+// Стиль при наведении/день table-header__item--active
+
 $(document).ready(function () {
   $('.trainers__list').slick({
     dots: false,

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Фитнес-центр Омска. Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.">
   <title>Фитнес-центр: главная страница</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" crossorigin="anonymous">
@@ -56,13 +57,18 @@
         <div class="main-info__about-us">
           <b>Омск</b>
           <h1>Фитнес центр</h1>
-          <p>Тренажёрный зал Групповые занятия Кардио-зона</p>
+          <div class="main-info__container">
+            <span>Тренажёрный зал</span>
+            <span>Групповые занятия</span>
+            <span>Кардио-зона</span>
+          </div>
+          
           <span class="visually-hidden">купить абонемент</span>
           <a href="#suggestion" class="main-info__btn">купить абонемент</a>
         </div>
         <picture>
           <source type="image/webp" srcset="img/main-photo.webp, img/main-photo@2x.webp 2x">
-            <!-- 1x: 500px; 2x: 1000px -->
+          
           <img src="img/main-photo.jpg" srcset="img/main-photo@2x.jpg 2x" width="500" height="556" alt="Главное фото страницы">
         </picture>
         <div class="main-info__social social">
@@ -115,7 +121,7 @@
         <div class="overview__pucture">
           <picture>
             <source type="image/webp" srcset="img/gym-photo.webp, img/gym-photo@2x.webp 2x">
-            <!-- 1x: 660px; 2x: 1320px -->
+            
             <img src="img/gym-photo.jpg" srcset="img/gym-photo@2x.jpg 2x" width="678" height="401" alt="Фото тренажерного зала">
           </picture>
           <div class="overview__container">
@@ -135,7 +141,7 @@
         <h2>абонементы</h2>
         <div class="suggestions__tools-wrapper tools">
           <button class="tools__btn tools__btn--active" type="button">1 месяц
-            <!-- tools__btn--active-->
+            
           </button>
           <button class="tools__btn" type="button">6 месяцев
           </button>
@@ -145,7 +151,7 @@
         </div>
         <div class="suggestions__catalog-wrapper catalog">
           <ul class="catalog__list catalog__list--active">
-            <!--catalog__list--active-->
+            
             <li class="catalog__item">
               <h3>С тренером</h3>
               <span>12 занятий</span>
@@ -274,13 +280,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="news__item">
+                <div class="news__clock">
                   <h3>Время</h3>
-                </div>
-                <div class="news__item">
                   <span>12:00</span>
                 </div>
               </div>
+
             </div>
             <p class="news__description">Ежегодные соревнования по CrossFit</p>
             <a href="#">заполнить заявку</a>
@@ -310,7 +315,7 @@
             </div>
             <picture>
               <source type="image/webp" srcset="img/photo-slide1.webp, img/photo-slide1@2x.webp 2x">
-              <!-- 1x: 260px; 2x: 294px -->
+              
               <img src="img/photo-slide1.png" srcset="img/photo-slide1@2x.png 2x" width="260" height="294" alt="Фото тренера">
             </picture>
             <h3>Анна Павлова</h3>
@@ -327,7 +332,7 @@
             </div>
             <picture>
               <source type="image/webp" srcset="img/photo-slide2.webp, img/photo-slide2@2x.webp 2x">
-              <!-- 1x: 260px; 2x: 294px -->
+              
               <img src="img/photo-slide2.png" srcset="img/photo-slide2@2x.png 2x" width="260" height="294" alt="Фото тренера">
             </picture>
             <h3>Алексей Лавров</h3>
@@ -344,7 +349,7 @@
             </div>
             <picture>
               <source type="image/webp" srcset="img/photo-slide3.webp, img/photo-slide3@2x.webp 2x">
-              <!-- 1x: 260px; 2x: 294px -->
+              
               <img src="img/photo-slide3.png" srcset="img/photo-slide3@2x.png 2x" width="260" height="294" alt="Фото тренера">
             </picture>
             <h3>Александр Пашков</h3>
@@ -361,7 +366,7 @@
             </div>
             <picture>
               <source type="image/webp" srcset="img/photo-slide4.webp, img/photo-slide4@2x.webp 2x">
-              <!-- 1x: 260px; 2x: 294px -->
+              
               <img src="img/photo-slide4.png" srcset="img/photo-slide4@2x.png 2x" width="260" height="294" alt="Фото тренера">
             </picture>
             <h3>Мария Кетова</h3>
@@ -378,7 +383,7 @@
             </div>
             <picture>
               <source type="image/webp" srcset="img/photo-slide3.webp, img/photo-slide3@2x.webp 2x">
-              <!-- 1x: 260px; 2x: 294px -->
+              
               <img src="img/photo-slide3.png" srcset="img/photo-slide3@2x.png 2x" width="260" height="294" alt="Фото тренера">
             </picture>
             <h3>Александр Пашков</h3>
@@ -395,7 +400,7 @@
             </div>
             <picture>
               <source type="image/webp" srcset="img/photo-slide4.webp, img/photo-slide4@2x.webp 2x">
-              <!-- 1x: 260px; 2x: 294px -->
+              
               <img src="img/photo-slide4.png" srcset="img/photo-slide4@2x.png 2x" width="260" height="294" alt="Фото тренера">
             </picture>
             <h3>Мария Кетова</h3>
@@ -412,7 +417,7 @@
             </div>
             <picture>
               <source type="image/webp" srcset="img/photo-slide1.webp, img/photo-slide1@2x.webp 2x">
-              <!-- 1x: 260px; 2x: 294px -->
+              
               <img src="img/photo-slide1.png" srcset="img/photo-slide1@2x.png 2x" width="260" height="294" alt="Фото тренера">
             </picture>
             <h3>Анна Павлова</h3>
@@ -429,7 +434,7 @@
             </div>
             <picture>
               <source type="image/webp" srcset="img/photo-slide2.webp, img/photo-slide2@2x.webp 2x">
-              <!-- 1x: 260px; 2x: 294px -->
+              
               <img src="img/photo-slide2.png" srcset="img/photo-slide2@2x.png 2x" width="260" height="294" alt="Фото тренера">
             </picture>
             <h3>Алексей Лавров</h3>
@@ -505,7 +510,7 @@
           </div>
           <picture>
             <source type="image/webp" srcset="img/photo-salles-tablet.webp, img/photo-salles-tablet@2x.webp 2x">
-            <!-- 1x: 399px; 2x: 798px -->
+            
             <img src="img/photo-salles-tablet.jpg" srcset="img/photo-salles-tablet@2x.jpg 2x" width="450" height="462" alt="фото спортсменки">
           </picture>
         </div>
@@ -526,24 +531,13 @@
 
     <section class="reviews">
       <h2 class="reviews__description">Отзывы</h2>
-      <!-- <button class="reviews__btn reviews__btn--left" type="button">
-        <span class="visually-hidden">Предыдущий отзыв</span>
-        <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17 1L0.999999 17L17 33" />
-        </svg>
-      </button>
-      <button class="reviews__btn reviews__btn--right" type="button">
-        <span class="visually-hidden">Следующий отзыв</span>
-        <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L17 17L1 33" />
-        </svg>
-      </button> -->
+      
       <div class="reviews__wrapper">
         <ul class="reviews__list">
           <li class="reviews__item">
             <picture>
               <source type="image/webp" srcset="img/photo-feedback.webp, img/photo-feedback@2x.webp 2x">
-              <!-- 1x: 80px; 2x: 160px -->
+              
               <img src="img/photo-feedback.png" srcset="img/photo-feedback@2x.png 2x" width="80" height="80" alt="фото клиента">
             </picture>
             <div class="reviews__item-container">
@@ -554,9 +548,9 @@
           </li>
           <li class="reviews__item">
             <picture>
-              <source type="image/webp" srcset="img/photo-feedback.webp, img/photo-feedback@2x.webp 2x">
-              <!-- 1x: 80px; 2x: 160px -->
-              <img src="img/photo-feedback.png" srcset="img/photo-feedback@2x.png 2x" width="80" height="80" alt="фото клиента">
+              <source type="image/webp" srcset="img/photo-slide1.webp, img/photo-slide1@2x.webp 2x">
+              
+              <img src="img/photo-slide1.png" srcset="img/photo-slide1@2x.png 2x" width="80" height="80" alt="фото клиента">
             </picture>
             <div class="reviews__item-container">
               <h3>Ольга Холмс</h3>
@@ -583,12 +577,12 @@
               </p>
               <p>
                 <span class="visually-hidden">Ваш номер телефона</span>
-                <input id="user-phone" type="number" name="number" placeholder="Телефон">
+                <input id="user-phone" type="tel" name="number" placeholder="Телефон">
                 <label for="user-phone" class="visually-hidden">Телефон</label>
               </p>
+              <button class="subscription__btn" form="form__question" type="submit">отправить</button>
             </form>
           </div>
-          <button class="subscription__btn" form="form__question" type="submit">отправить</button>
         </div>
       </div>
       <div class="contacts">
@@ -608,7 +602,7 @@
             <ul class="contacts__list">
               <li class="contacts__item">
                 <span>Телефон:</span>
-                <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
+                <a href="tel:88005555555">8-800-555-55-55</a>
               </li>
               <li class="contacts__item">
                 <span>Email:</span>
@@ -677,8 +671,8 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="js/vendor.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

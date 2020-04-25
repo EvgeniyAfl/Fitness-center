@@ -13,6 +13,7 @@ var imagemin = require('gulp-imagemin');
 var webp = require('gulp-webp');
 var svgstore = require('gulp-svgstore');
 var posthtml = require('gulp-posthtml');
+var removeHtmlComments = require('gulp-remove-html-comments');
 var include = require('posthtml-include');
 var del = require('del');
 
@@ -80,6 +81,7 @@ gulp.task('html', function () {
       .pipe(posthtml([
         include()
       ]))
+      .pipe(removeHtmlComments())
       .pipe(gulp.dest('build'));
 });
 

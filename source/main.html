@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="Фитнес-центр Омска. Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.">
   <title>Фитнес-центр: главная страница</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" crossorigin="anonymous">
@@ -34,13 +36,18 @@
         <div class="main-info__about-us">
           <b>Омск</b>
           <h1>Фитнес центр</h1>
-          <p>Тренажёрный зал Групповые занятия Кардио-зона</p>
+          <div class="main-info__container">
+            <span>Тренажёрный зал</span>
+            <span>Групповые занятия</span>
+            <span>Кардио-зона</span>
+          </div>
+          <!-- <p>Тренажёрный зал Групповые занятия Кардио-зона</p> -->
           <span class="visually-hidden">купить абонемент</span>
           <a href="#suggestion" class="main-info__btn">купить абонемент</a>
         </div>
         <picture>
           <source type="image/webp" srcset="img/main-photo.webp, img/main-photo@2x.webp 2x">
-            <!-- 1x: 500px; 2x: 1000px -->
+          <!-- 1x: 500px; 2x: 1000px -->
           <img src="img/main-photo.jpg" srcset="img/main-photo@2x.jpg 2x" width="500" height="556"
             alt="Главное фото страницы">
         </picture>
@@ -55,7 +62,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="https://vk.com/" class="social__link social__link--vk" href="#">
+              <a href="https://vk.com/" class="social__link social__link--vk">
                 <span class="visually-hidden">вконтакте</span>
                 <svg width="14" height="9">
                   <use xlink:href="#icon-vk"></use>
@@ -63,7 +70,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="https://www.instagram.com/" class="social__link social__link--ig" href="#">
+              <a href="https://www.instagram.com/" class="social__link social__link--ig">
                 <span class="visually-hidden">инстаграмм</span>
                 <svg width="10" height="10">
                   <use xlink:href="#icon-ig"></use>
@@ -254,13 +261,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="news__item">
+                <div class="news__clock">
                   <h3>Время</h3>
-                </div>
-                <div class="news__item">
                   <span>12:00</span>
                 </div>
               </div>
+
             </div>
             <p class="news__description">Ежегодные соревнования по CrossFit</p>
             <a href="#">заполнить заявку</a>
@@ -545,9 +551,9 @@
           </li>
           <li class="reviews__item">
             <picture>
-              <source type="image/webp" srcset="img/photo-feedback.webp, img/photo-feedback@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-slide1.webp, img/photo-slide1@2x.webp 2x">
               <!-- 1x: 80px; 2x: 160px -->
-              <img src="img/photo-feedback.png" srcset="img/photo-feedback@2x.png 2x" width="80" height="80"
+              <img src="img/photo-slide1.png" srcset="img/photo-slide1@2x.png 2x" width="80" height="80"
                 alt="фото клиента">
             </picture>
             <div class="reviews__item-container">
@@ -575,12 +581,12 @@
               </p>
               <p>
                 <span class="visually-hidden">Ваш номер телефона</span>
-                <input id="user-phone" type="number" name="number" placeholder="Телефон">
+                <input id="user-phone" type="tel" name="number" placeholder="Телефон">
                 <label for="user-phone" class="visually-hidden">Телефон</label>
               </p>
+              <button class="subscription__btn" form="form__question" type="submit">отправить</button>
             </form>
           </div>
-          <button class="subscription__btn" form="form__question" type="submit">отправить</button>
         </div>
       </div>
       <div class="contacts">
@@ -600,7 +606,7 @@
             <ul class="contacts__list">
               <li class="contacts__item">
                 <span>Телефон:</span>
-                <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
+                <a href="tel:88005555555">8-800-555-55-55</a>
               </li>
               <li class="contacts__item">
                 <span>Email:</span>
@@ -669,8 +675,8 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="js/vendor.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

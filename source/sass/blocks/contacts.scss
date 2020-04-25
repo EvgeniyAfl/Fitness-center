@@ -51,6 +51,7 @@
   justify-content: space-between;
 
   @include nullify;
+  list-style: none;
 
   &:first-child {
     flex: 1 1 auto;
@@ -81,6 +82,14 @@
     font-weight: 400;
     line-height: 152.3%;
     color: $color-dark-blue;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
 

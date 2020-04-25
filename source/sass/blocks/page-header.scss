@@ -1,18 +1,9 @@
 .page-header {
   width: 100%;
 
-  background-image: url("../img/bg-main.png");
-  background-position: center 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $color-red;
+  background: radial-gradient(35% 76% at 13% 75%, #003d85 15%, #b80027 121%);
 
   margin-bottom: 120px;
-
-  @media (min-resolution: $retina-dppx),
-    (min-resolution: $retina-dpi) {
-    background-image: url("../img/bg-main@2x.jpg");
-  }
 }
 
 .page-header__wrapper {
@@ -51,15 +42,9 @@
 @media (max-width: $tablet-width) {
   .page-header {
 
-    margin-bottom: 97px;
+    margin-bottom: 99px;
 
-    background-size: auto;
-    background-position: -64px -62px;
-
-    @media (min-resolution: $retina-dppx),
-      (min-resolution: $retina-dpi) {
-      background-position: -273px -315px;
-    }
+    background: radial-gradient(32% 76% at 12% 69%, #003d85 13%, #b80027 121%);
   }
 
   .page-header__wrapper {
@@ -90,12 +75,7 @@
   .page-header {
     margin-bottom: 69px;
 
-    background-position: -117px -50px;
-
-    @media (min-resolution: $retina-dppx),
-      (min-resolution: $retina-dpi) {
-      background-position: -328px -314px;
-    }
+    background: radial-gradient(62% 55% at 7% 62%, #003d85 23%, #b80027 146%);
   }
 
   .page-header__logo svg {

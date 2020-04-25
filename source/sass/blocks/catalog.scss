@@ -5,6 +5,7 @@
   flex-wrap: wrap;
 
   @include nullify;
+  list-style: none;
 }
 
 .catalog__list--active {

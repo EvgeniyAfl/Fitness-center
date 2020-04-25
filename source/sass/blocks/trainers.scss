@@ -68,10 +68,13 @@
   color: $color-white;
 
   transition: margin-left 250ms;
+  list-style: none;
 }
 
 .trainers__item {
   position: relative;
+  display: inline-block;
+
   height: 294px;
   width: 260px;
 
@@ -127,8 +130,10 @@
   .trainers__item {
     width: 268px;
 
+    margin-right: 30px;
+
     img {
-      width: 100%;
+      width: 268px;
       height: 294px;
     }
   }
@@ -166,6 +171,7 @@
 
   .trainers__item {
     width: 226px;
+    height: 274px;
 
     margin: 0;
 

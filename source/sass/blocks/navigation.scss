@@ -10,6 +10,7 @@
 
   @include nullify;
   margin-left: 11px;
+  list-style: none;
 
   a {
     font-family: "Roboto Condense", "Roboto", sans-serif;
@@ -31,14 +32,16 @@
 
 @media (max-width: $mobile-width) {
   .navigation {
-    width: 120%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 320px;
 
     margin-top: -21px;
     margin-bottom: 36px;
   }
 
   .navigation__list {
+    width: 100%;
+    max-width: 316px;
     height: 99px;
     flex-direction: column;
     justify-content: space-between;
@@ -51,14 +54,9 @@
   }
 
   .navigation__item {
-    margin-bottom: 10px;
-
     &:first-child {
       margin-top: 41px;
-    }
-
-    &:nth-child(2) {
-      margin: 0;
+      margin-bottom: 10px;
     }
 
     &:last-child {

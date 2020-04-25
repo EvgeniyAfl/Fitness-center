@@ -43,7 +43,7 @@
 @media (max-width: $tablet-width) {
   .promo {
     margin-bottom: 99px;
-    padding-top: 96px;
+    padding-top: 100px;
 
     &::after {
       width: 305px;
@@ -66,7 +66,7 @@
 
   .promo__wrapper {
     width: 88%;
-    max-width: 800px;
+    max-width: 700px;
     height: 292px;
 
     img {

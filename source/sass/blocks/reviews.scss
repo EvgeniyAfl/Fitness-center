@@ -41,6 +41,7 @@
   padding: 0;
 
   transition: margin-left 250ms;
+  list-style: none;
 }
 
 .reviews__item {
@@ -59,6 +60,8 @@
     margin: 0;
     margin-top: 62px;
     margin-left: 62px;
+
+    border-radius: 50%;
   }
 }
 
@@ -144,6 +147,10 @@
 
   .reviews__btn--right {
     right: 5%;
+  }
+
+  .reviews__list {
+    width: 564px;
   }
 
   .reviews__item {

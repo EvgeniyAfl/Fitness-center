@@ -10,8 +10,8 @@
 .slick-list {
   position: relative;
   overflow: hidden;
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 
   @include nullify;
 
@@ -26,8 +26,9 @@
 
 .slick-track {
   position: relative;
-  display: flex;
-  justify-content: space-between;
+  height: 294px;
+  // display: flex;
+  // justify-content: space-between;
 
   margin-left: auto;
   margin-right: auto;
@@ -48,8 +49,9 @@
 }
 
 .slick-slide {
-  height: 100%;
   min-height: 1px;
+  margin-right: 31px;
+  float: left;
 
   [dir="rtl"] & {
     float: right;
@@ -64,14 +66,9 @@
     display: none;
   }
 
-  display: none;
 
   &.dragging img {
     pointer-events: none;
-  }
-
-  .slick-initialized & {
-    display: block;
   }
 
   .slick-loading & {
@@ -101,7 +98,7 @@
   stroke: #afafaf;
 
   &:hover {
-    stroke: $color-black;
+    opacity: 0.7;
   }
 
   &:active {
@@ -142,8 +139,13 @@
 
   .slick-slide {
     img {
+      width: 80px;
+      height: 80px;
+
       margin-top: 62px;
       margin-left: 62px;
+
+      border-radius: 50%;
     }
   }
 }
@@ -165,18 +167,20 @@
 
   .reviews__list {
     .slick-slide {
+      margin: 0;
+
       img {
-        margin-top: 40px;
-        margin-left: 41px;
+        margin-top: 62px;
+        margin-left: 64px;
       }
     }
 
     .slick-prev {
-      left: -60px;
+      left: -58px;
     }
 
     .slick-next {
-      right: -60px;
+      right: -58px;
     }
   }
 }
@@ -212,6 +216,9 @@
   .reviews__list {
     .slick-slide {
       img {
+        width: 68px;
+        height: 68px;
+
         margin-top: 40px;
         margin-left: 41px;
       }
