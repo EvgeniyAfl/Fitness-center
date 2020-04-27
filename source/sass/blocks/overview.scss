@@ -300,7 +300,7 @@
 
     @media (min-resolution: $retina-dppx),
       (min-resolution: $retina-dpi) {
-      background-image: url("../img/gym-photo-phone@2x.jpg");
+      background-image: url("../img/gym-photo-phone@2x.webp");
     }
   }
 
@@ -322,7 +322,7 @@
 
     @media (min-resolution: $retina-dppx),
       (min-resolution: $retina-dpi) {
-      background-image: url("../img/gym-photo-movie-phone@2x.png");
+      background-image: url("../img/gym-photo-movie-phone@2x.jpg");
     }
 
     &::before {

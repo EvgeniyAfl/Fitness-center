@@ -1,7 +1,7 @@
 /* Slider */
 
 .slick-slider {
-  position: relative;
+  // position: relative;
   display: block;
   box-sizing: border-box;
   margin: 0 auto;
@@ -59,6 +59,7 @@
 
   img {
     display: block;
+    height: 100%;
     margin: 0;
   }
 
@@ -84,7 +85,7 @@
 
 .slick-arrow {
   position: absolute;
-  top: 45%;
+  top: 231px;
 
   width: 18px;
   height: 34px;
@@ -130,14 +131,16 @@
   }
 
   .slick-prev {
-    left: -57px;
+    left: 0;
   }
 
   .slick-next {
-    right: -57px;
+    right: 0;
   }
 
   .slick-slide {
+    margin: 0;
+
     img {
       width: 80px;
       height: 80px;
@@ -153,15 +156,7 @@
 @media (max-width: $tablet-width) {
   .trainers__list {
     .slick-arrow {
-      top: 44%;
-    }
-
-    .slick-prev {
-      left: -55px;
-    }
-
-    .slick-next {
-      right: -55px;
+      top: 57%;
     }
   }
 
@@ -174,14 +169,6 @@
         margin-left: 64px;
       }
     }
-
-    .slick-prev {
-      left: -58px;
-    }
-
-    .slick-next {
-      right: -58px;
-    }
   }
 }
 
@@ -190,27 +177,15 @@
     width: 10px;
     height: 20px;
 
-    top: 44%;
+    top: 55%;
 
     background-size: contain;
   }
 
   .trainers__list {
-    .slick-prev {
-      left: -34px;
+    .slick-arrow {
+      top: 55%;
     }
-
-    .slick-next {
-      right: -34px;
-    }
-  }
-
-  .slick-prev {
-    left: -34px;
-  }
-
-  .slick-next {
-    right: -34px;
   }
 
   .reviews__list {
@@ -226,14 +201,6 @@
 
     .slick-arrow {
       top: 47%;
-    }
-
-    .slick-prev {
-      left: -34px;
-    }
-
-    .slick-next {
-      right: -34px;
     }
   }
 }

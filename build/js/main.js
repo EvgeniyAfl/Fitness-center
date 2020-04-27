@@ -1,7 +1,4 @@
 'use strict';
-var pageBody = document.querySelector('.page-body');
-
-pageBody.classList.remove('page-body--nojs');
 
 $(document).ready(function () {
   $('.trainers__list').slick({

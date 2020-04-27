@@ -21,6 +21,10 @@
   background: transparent;
 
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .tools__btn--active {

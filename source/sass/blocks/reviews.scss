@@ -25,6 +25,7 @@
 }
 
 .reviews__wrapper {
+  position: relative;
   width: 675px;
   overflow: hidden;
 
@@ -119,11 +120,11 @@
 }
 
 .reviews__btn--left {
-  left: 25%;
+  left: 0;
 }
 
 .reviews__btn--right {
-  right: 25%;
+  right: 0;
 }
 
 @media (max-width: $tablet-width) {
@@ -137,7 +138,8 @@
   }
 
   .reviews__wrapper {
-    width: 680px;
+    width: 100%;
+    max-width: 680px;
   }
 
 
