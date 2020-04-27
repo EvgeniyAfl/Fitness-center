@@ -1,4 +1,4 @@
-.tools__btn {
+.tools__link {
   display: block;
 
   margin: 0;
@@ -27,7 +27,7 @@
   }
 }
 
-.tools__btn--active {
+.tools__link--active {
   padding-bottom: 10px;
 
   border-bottom: 2px solid $color-dark-red;
@@ -47,20 +47,20 @@
 }
 
 @media (max-width: $tablet-width) {
-  .tools__btn {
+  .tools__link {
     font-size: 18px;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .tools__btn {
+  .tools__link {
     padding-top: 7px;
 
     font-size: 16px;
     line-height: 24px;
   }
 
-  .tools__btn--active {
+  .tools__link--active {
     padding-bottom: 12px;
   }
 }

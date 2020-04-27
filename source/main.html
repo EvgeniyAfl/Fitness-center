@@ -120,17 +120,20 @@
       <div class="suggestions__wrapper">
         <h2>абонементы</h2>
         <div class="suggestions__tools-wrapper tools">
-          <button class="tools__btn tools__btn--active" type="button">1 месяц
-            <!-- tools__btn--active-->
-          </button>
-          <button class="tools__btn" type="button">6 месяцев
-          </button>
-          <button class="tools__btn" type="button">12 месяцев
-          </button>
+          <span class="visually-hidden">Выбрать абонемент на 1 месяц</span>
+          <a class="tools__link tools__link--active" href="#content1">1 месяц
+            <!-- tools__link--active-->
+          </a>
+          <span class="visually-hidden">Выбрать абонемент на 6 месяцев</span>
+          <a class="tools__link" href="#content2">6 месяцев
+          </a>
+          <span class="visually-hidden">Выбрать абонемент на 12 месяцев</span>
+          <a class="tools__link" href="#content3">12 месяцев
+          </a>
           <div class="tools__full-range"></div>
         </div>
         <div class="suggestions__catalog-wrapper catalog">
-          <ul class="catalog__list catalog__list--active">
+          <ul class="catalog__list catalog__list--active" id="content1">
             <!--catalog__list--active-->
             <li class="catalog__item">
               <h3>С тренером</h3>
@@ -166,12 +169,12 @@
               <a href="#">купить абонемент</a>
             </li>
           </ul>
-          <ul class="catalog__list">
+          <ul class="catalog__list" id="content2">
             <li class="catalog__item">
               <h3>С тренером</h3>
               <span>72 занятия</span>
-              <div class="catalog__price">30000
-                <b>30000</b>
+              <div class="catalog__price">7000
+                <b>7000</b>
                 <svg width="30" height="42">
                   <use xlink:href="#icon-ruble"></use>
                 </svg>
@@ -181,8 +184,8 @@
             <li class="catalog__item">
               <h3>Дневной</h3>
               <span>с 8:00 до 17:00</span>
-              <div class="catalog__price">10000
-                <b>10000</b>
+              <div class="catalog__price">3600
+                <b>3600</b>
                 <svg width="30" height="42">
                   <use xlink:href="#icon-ruble"></use>
                 </svg>
@@ -192,8 +195,8 @@
             <li class="catalog__item">
               <h3>Полный день</h3>
               <span>с 8:00 до 22:00</span>
-              <div class="catalog__price">16000
-                <b>16000</b>
+              <div class="catalog__price">5400
+                <b>5400</b>
                 <svg width="30" height="42">
                   <use xlink:href="#icon-ruble"></use>
                 </svg>
@@ -201,12 +204,12 @@
               <a href="#">купить абонемент</a>
             </li>
           </ul>
-          <ul class="catalog__list">
+          <ul class="catalog__list" id="content3">
             <li class="catalog__item">
               <h3>С тренером</h3>
               <span>144 занятия</span>
-              <div class="catalog__price">60000
-                <b>60000</b>
+              <div class="catalog__price">9000
+                <b>9000</b>
                 <svg width="30" height="42">
                   <use xlink:href="#icon-ruble"></use>
                 </svg>
@@ -216,8 +219,8 @@
             <li class="catalog__item">
               <h3>Дневной</h3>
               <span>с 8:00 до 17:00</span>
-              <div class="catalog__price">20000
-                <b>20000</b>
+              <div class="catalog__price">7200
+                <b>7200</b>
                 <svg width="30" height="42">
                   <use xlink:href="#icon-ruble"></use>
                 </svg>
@@ -227,8 +230,8 @@
             <li class="catalog__item">
               <h3>Полный день</h3>
               <span>с 8:00 до 22:00</span>
-              <div class="catalog__price">32000
-                <b>32000</b>
+              <div class="catalog__price">9000
+                <b>9000</b>
                 <svg width="30" height="42">
                   <use xlink:href="#icon-ruble"></use>
                 </svg>
@@ -534,8 +537,8 @@
         </svg>
       </button> -->
       <div class="reviews__wrapper">
-        <ul class="reviews__list">
-          <li class="reviews__item">
+        <div class="reviews__list">
+          <div class="reviews__item">
             <picture>
               <source type="image/webp" srcset="img/photo-feedback.webp, img/photo-feedback@2x.webp 2x">
               <!-- 1x: 80px; 2x: 160px -->
@@ -547,8 +550,8 @@
               <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
                 дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
             </div>
-          </li>
-          <li class="reviews__item">
+          </div>
+          <div class="reviews__item">
             <picture>
               <source type="image/webp" srcset="img/photo-feedback.webp, img/photo-feedback@2x.webp 2x">
               <!-- 1x: 80px; 2x: 160px -->
@@ -559,8 +562,8 @@
               <h3>Ольга Холмс</h3>
               <p>«SuperClub - очень достойный клуб с отличным расположением, но не без недостатков»</p>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -619,8 +622,8 @@
     <div class="footer-bottom">
       <div class="footer-bottom__wrapper">
         <div class="footer-bottom__logo">
-          <span class="visually-hidden">Логотип сайта: Фитнес-центр</span>
           <a href="#">
+            <span class="visually-hidden">Логотип сайта: Фитнес-центр</span>
             <svg width="89" height="20">
               <use xlink:href="#icon-Supergym-logo"></use>
             </svg>
@@ -649,6 +652,7 @@
           <ul class="social-footer__list">
             <li class="social-footer__item">
               <a href="https://vk.com/">
+                <span class="visually-hidden">Вконтакте</span>
                 <svg width="24" height="24">
                   <use xlink:href="#icon-vk-footer"></use>
                 </svg>
@@ -656,6 +660,7 @@
             </li>
             <li class="social-footer__item">
               <a href="https://www.instagram.com/">
+                <span class="visually-hidden">Инстаграмм</span>
                 <svg width="30" height="24">
                   <use xlink:href="#icon-ig-footer"></use>
                 </svg>
@@ -663,6 +668,7 @@
             </li>
             <li class="social-footer__item">
               <a href="https://www.facebook.com/">
+                <span class="visually-hidden">Фэйсбук</span>
                 <svg width="24" height="24">
                   <use xlink:href="#icon-fb-footer"></use>
                 </svg>
