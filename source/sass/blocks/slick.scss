@@ -1,7 +1,6 @@
 /* Slider */
 
 .slick-slider {
-  // position: relative;
   display: block;
   box-sizing: border-box;
   margin: 0 auto;
@@ -10,8 +9,6 @@
 .slick-list {
   position: relative;
   overflow: hidden;
-  // display: flex;
-  // justify-content: space-between;
 
   @include nullify;
 
@@ -27,8 +24,6 @@
 .slick-track {
   position: relative;
   height: 294px;
-  // display: flex;
-  // justify-content: space-between;
 
   margin-left: auto;
   margin-right: auto;
