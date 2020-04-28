@@ -33,6 +33,7 @@
   p {
     @include nullify;
     padding-right: 40px;
+    padding-bottom: 10px;
 
     font-size: 18px;
     line-height: 140%;

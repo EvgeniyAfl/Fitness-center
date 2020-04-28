@@ -287,7 +287,6 @@
                   <span>12:00</span>
                 </div>
               </div>
-
             </div>
             <p class="news__description">Ежегодные соревнования по CrossFit</p>
             <a href="#">заполнить заявку</a>
@@ -295,7 +294,7 @@
         </div>
         <picture>
           <source type="image/webp" srcset="img/photo-news.webp, img/photo-news@2x.webp 2x">
-          <img src="img/photo-news.jpg" srcset="img/photo-news@2x.jpg 2x" width="660" height="500" alt="Фото спортсмена">
+          <img src="img/photo-news.jpg" srcset="img/photo-news@2x.jpg 2x" width="660" height="600" alt="Фото спортсмена">
         </picture>
       </div>
     </section>
@@ -513,7 +512,7 @@
           <picture>
             <source type="image/webp" srcset="img/photo-salles-tablet.webp, img/photo-salles-tablet@2x.webp 2x">
             
-            <img src="img/photo-salles-tablet.jpg" srcset="img/photo-salles-tablet@2x.jpg 2x" width="399" height="462" alt="фото спортсменки">
+            <img src="img/photo-salles-tablet.jpg" srcset="img/photo-salles-tablet@2x.jpg 2x" width="399" height="500" alt="фото спортсменки">
           </picture>
         </div>
         <ul class="salles__list">
@@ -533,7 +532,6 @@
 
     <section class="reviews">
       <h2 class="reviews__description">Отзывы</h2>
-      
       <div class="reviews__wrapper">
         <div class="reviews__list">
           <div class="reviews__item">
@@ -574,12 +572,12 @@
             <form method="POST" id="form__question" action="https://echo.htmlacademy.ru">
               <p>
                 <span class="visually-hidden">Ваше имя</span>
-                <input id="user-name" type="text" name="login" placeholder="Имя">
+                <input id="user-name" type="text" name="login" placeholder="Имя" required="">
                 <label for="user-name" class="visually-hidden">Имя</label>
               </p>
               <p>
                 <span class="visually-hidden">Ваш номер телефона</span>
-                <input id="user-phone" type="tel" name="number" placeholder="Телефон">
+                <input id="user-phone" type="tel" name="number" placeholder="Телефон" required="">
                 <label for="user-phone" class="visually-hidden">Телефон</label>
               </p>
               <button class="subscription__btn" form="form__question" type="submit">отправить</button>

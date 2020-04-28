@@ -31,6 +31,10 @@ $(document).ready(function () {
   $('.reviews__list').slick();
 });
 
+$(document).ready(function () {
+  $('#user-phone').mask('00000000000');
+});
+
 var $tabs = function (target) {
   var elemTabs = (typeof target === 'string' ? document.querySelector(target) : target);
   var eventTabsShow;

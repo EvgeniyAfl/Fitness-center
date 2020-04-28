@@ -1,5 +1,5 @@
 .navigation {
-  width: 431px;
+  min-width: 431px;
 }
 
 .navigation__list {
@@ -18,6 +18,12 @@
     font-size: 14px;
     color: $color-white;
     text-align: center;
+  }
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    padding-right: 10px;
   }
 }
 

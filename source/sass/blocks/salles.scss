@@ -28,12 +28,13 @@
 
 .salles__container {
   width: 560px;
-  height: 462px;
+  min-height: 462px;
   display: flex;
 
   background-image: url("../img/photo-salles.jpg");
   background-repeat: no-repeat;
-  background-position: 280px 0;
+  background-position: 280px center;
+  background-size: contain;
 
   @media (min-resolution: $retina-dppx),
     (min-resolution: $retina-dpi) {
@@ -66,6 +67,10 @@
   border: 7px solid transparent;
   border-image: linear-gradient(to right bottom, #d10a42 5%, #00359f 100%);
   border-image-slice: 1;
+
+  &:first-child {
+    margin-bottom: 40px;
+  }
 
   span {
     display: block;

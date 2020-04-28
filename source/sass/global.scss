@@ -24,6 +24,11 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
+  // &:active,
+  // &:focus {
+  //   outline: none;
+  // }
 }
 
 img {

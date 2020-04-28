@@ -2,6 +2,12 @@
   position: relative;
   width: 100%;
   min-height: 515px;
+
+  button,
+  &:active,
+  &:focus {
+    outline: none;
+  }
 }
 
 .trainers__wrapper {

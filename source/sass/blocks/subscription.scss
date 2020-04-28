@@ -41,6 +41,7 @@
 
     box-sizing: border-box;
     color: $color-white;
+    outline: none;
 
     &:hover {
       opacity: 0.7;
@@ -85,14 +86,11 @@
 
   border: 3px solid $color-white;
   background: transparent;
+  outline: none;
   cursor: pointer;
 
   &:hover {
     opacity: 0.7;
-  }
-
-  &:focus {
-    border-color: #002336;
   }
 
   &:active {

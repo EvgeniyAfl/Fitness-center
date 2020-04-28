@@ -6,6 +6,12 @@
   font-family: "Roboto Condense", "Roboto", sans-serif;
   font-style: normal;
   color: $color-white;
+
+  button,
+  &:active,
+  &:focus {
+    outline: none;
+  }
 }
 
 .reviews__description {
@@ -35,7 +41,7 @@
 
 .reviews__list {
   width: 560px;
-  height: 242px;
+  min-height: 242px;
   display: flex;
 
   margin: 0 auto;
@@ -49,9 +55,10 @@
   display: flex;
   width: 100%;
   max-width: 560px;
-  height: 242px;
+  min-height: 242px;
 
   @include nullify;
+  padding-bottom: 10px;
 
   background-color: #1c3374;
 
