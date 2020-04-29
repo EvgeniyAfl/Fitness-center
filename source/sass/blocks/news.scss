@@ -1,5 +1,6 @@
 .news {
   width: 500px;
+  min-height: 500px;
   display: flex;
 
   background-color: #ed0233;
@@ -152,7 +153,8 @@
 
 @media (max-width: $tablet-width) {
   .news {
-    width: 74%;
+    width: 43%;
+    min-height: 292px;
   }
 
   .news__container {
@@ -253,6 +255,10 @@
   }
 
   .news__container {
+    width: 100%;
+  }
+
+  .news__description {
     width: 100%;
   }
 }

@@ -1,5 +1,5 @@
 .social-footer {
-  width: 116px;
+  min-width: 116px;
 }
 
 .social-footer__list {
@@ -8,6 +8,13 @@
   justify-content: space-between;
 
   @include nullify;
+
+  list-style: none;
+
+  a:not(:last-child) {
+    display: block;
+    padding: 0 5px;
+  }
 }
 
 @media (max-width: $tablet-width) {

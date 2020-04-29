@@ -54,10 +54,12 @@
 
 .suggestions__tools-wrapper {
   position: relative;
+
   width: 340px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  align-items: center;
 
   margin: 0 auto;
   margin-bottom: 38px;
@@ -109,6 +111,7 @@
 
   .suggestions__tools-wrapper {
     width: 49%;
+    max-width: 331px;
 
     margin-bottom: 44px;
   }
@@ -140,7 +143,7 @@
 
   .suggestions__tools-wrapper {
     width: 100%;
-    max-width: 500px;
+    max-width: 288px;
 
     margin-bottom: 33px;
   }

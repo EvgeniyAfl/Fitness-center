@@ -43,6 +43,12 @@
     color: $color-white;
     outline: none;
 
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #74819c;
+    border-radius: 0;
+    -webkit-appearance: none;
+
     &:hover {
       opacity: 0.7;
     }
@@ -54,10 +60,6 @@
       color: $color-white;
       text-align: left;
     }
-
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #74819c;
   }
 
   p {

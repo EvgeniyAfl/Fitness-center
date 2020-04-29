@@ -62,14 +62,16 @@
 }
 
 .salles__item {
+  margin-bottom: 40px;
   padding-left: 28px;
 
-  border: 7px solid transparent;
+  border-width: 7px;
+  border-style: solid;
   border-image: linear-gradient(to right bottom, #d10a42 5%, #00359f 100%);
   border-image-slice: 1;
 
-  &:first-child {
-    margin-bottom: 40px;
+  &:last-child {
+    margin: 0;
   }
 
   span {
@@ -144,7 +146,7 @@
     max-width: 678px;
     flex-direction: column;
 
-    margin-bottom: 99px;
+    margin-bottom: 59px;
   }
 
   .salles__container {
@@ -170,6 +172,10 @@
 
   .salles__item {
     width: 48%;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
 
     span {
       margin-top: 18px;
@@ -203,7 +209,7 @@
     width: 91%;
     max-width: 299px;
 
-    margin-bottom: 70px;
+    margin-bottom: 68px;
 
     text-align: center;
   }
@@ -222,7 +228,7 @@
 
     @media (min-resolution: $retina-dppx),
       (min-resolution: $retina-dpi) {
-      background-image: url("../img/photo-salles-phone@2x.webp");
+      background-image: url("../img/photo-salles-phone@2x.jpg");
       background-size: contain;
     }
 

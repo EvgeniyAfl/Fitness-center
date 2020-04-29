@@ -2,6 +2,7 @@
   display: block;
 
   margin: 0;
+  margin-right: 46px;
   padding-top: 20px;
   padding-bottom: 12px;
   padding-left: 0;
@@ -19,6 +20,10 @@
 
   border: none;
   background: transparent;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   cursor: pointer;
 
@@ -48,12 +53,15 @@
 
 @media (max-width: $tablet-width) {
   .tools__link {
+    margin-right: 54px;
+
     font-size: 18px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .tools__link {
+    margin-right: 45px;
     padding-top: 7px;
 
     font-size: 16px;

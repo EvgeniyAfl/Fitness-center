@@ -36,8 +36,8 @@ $(document).ready(function () {
 });
 
 var $tabs = function (target) {
-  var elemTabs = (typeof target === 'string' ? document.querySelector(target) : target);
-  var eventTabsShow;
+  var suggestionSection = document.querySelector('.suggestions');
+  var elemTabs = (typeof target === 'string' ? suggestionSection.querySelector(target) : target);
   var showTab = function (tabsLinkTarget) {
     var tabsPaneTarget;
     var tabsLinkActive;
@@ -59,7 +59,6 @@ var $tabs = function (target) {
     // добавляем классы к элементам (в завимости от выбранной вкладки)
     tabsLinkTarget.classList.add('tools__link--active');
     tabsPaneTarget.classList.add('catalog__list--active');
-    document.dispatchEvent(eventTabsShow);
   };
 
   var switchTabTo = function (tabsLinkIndex) {
