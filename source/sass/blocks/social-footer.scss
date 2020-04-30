@@ -11,9 +11,18 @@
 
   list-style: none;
 
-  a:not(:last-child) {
+  a {
     display: block;
-    padding: 0 5px;
+  }
+}
+
+.social-footer__item:not(:last-child) {
+  a {
+    padding-right: 5px;
+
+    :last-child {
+      padding-right: 0;
+    }
   }
 }
 

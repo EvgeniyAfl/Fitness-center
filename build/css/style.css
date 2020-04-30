@@ -2207,9 +2207,13 @@ img {
   margin: 0;
   padding: 0;
   list-style: none; }
-  .social-footer__list a:not(:last-child) {
-    display: block;
-    padding: 0 5px; }
+  .social-footer__list a {
+    display: block; }
+
+.social-footer__item:not(:last-child) a {
+  padding-right: 5px; }
+  .social-footer__item:not(:last-child) a :last-child {
+    padding-right: 0; }
 
 @media (max-width: 1199px) {
   .social-footer__list {
